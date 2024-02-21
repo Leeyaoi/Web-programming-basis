@@ -74,27 +74,19 @@
             <div style="
             margin-left: 30px;
             margin-right: 30px;">
-                <div id="about" markdown = "1">
-
+                <div id="about">
                     ### ABOUT ME{#identifier .h3}
                     ---
                     My name is Dasha. I am very good at my job.
-
                 </div>
                 <div id="experience">
-                    <h3 style="
-                    font-family: sans-serif;
-                    text-align: left;
-                    ">WORK EXPIERIENCE</h3>
+                    ### WORK EXPIERIENCE{#identifier .h3}
                     ---
                     + 0.5 years tech support in online english shcool
                     + 1 year child teacher in jewish youth program
                 </div>
                 <div id="skills">
-                    <h3 style="
-                    font-family: sans-serif;
-                    text-align: left;
-                    ">SKILLS</h3>
+                    ### SKILLS{#identifier .h3}
                     ---
                     1. C# 1.5 years
                     1. C++ 1 year
@@ -105,10 +97,7 @@
                     1. ITstep academy 2 years
                 </div>
                 <div id="code_ex">
-                    <h3 style="
-                    font-family: sans-serif;
-                    text-align: left;
-                    ">CODE EXAMPLE</h3>
+                    ### CODE EXAMPLE{#identifier .h3}
                     ---
                     '   using System.Text.Json;<br>
                         <br>
