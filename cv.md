@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="
-margin: auto;
-width: 100%;
-display: block;
-background-color: #b8cfd6;">
+<body>
     <div style="
     background-color: crimson;
     margin: auto;
@@ -23,10 +15,7 @@ background-color: #b8cfd6;">
         float: left;
         background-color: #000;
         color: #fff;">
-            <img src="pic.jpg" alt="my photo" style="
-            width: 300px;
-            border-radius: 50%;
-            margin: 10px;">
+            ![my photo](pic.jpg#my_pic)
             <div style="
             font-family: sans-serif;
             margin-left: 30px;
@@ -36,18 +25,16 @@ background-color: #b8cfd6;">
                    font-family: sans-serif;
                    text-align: left;
                    ">EDUCATION</h3>
-                    <hr>
-                    <ul>
-                        <li><a href="http://firstlyceum.by">MGOL1</a>2018-2022</li>
-                        <li><a href="http://bru.by">BRU</a>2022-2026</li>
-                    </ul>
+                    ---
+                    + [MGOL1](http://firstlyceum.by) 2018-2022
+                    + [BRU](http://bru.by) 2022-2026
                 </div>
                 <div id="reference">
                     <h3 style="
                     font-family: sans-serif;
                     text-align: left;
                     ">REFERENCE</h3>
-                    <hr>
+                    ---
                     <p>You can call my mom. She will tell you I'm the best</p>
                 </div>
                 <div id="contacts">
@@ -55,10 +42,10 @@ background-color: #b8cfd6;">
                     font-family: sans-serif;
                     text-align: left;
                     ">CONTACTS</h3>
-                    <hr>
-                    <p>A1: +375447084688</p>
-                    <p>Life: +375333371184</p>
-                    email: <a href="gmail.com">darya.ya2608@gmail.com</a>
+                    ---
+                    A1: +375447084688
+                    Life: +375333371184
+                    email: [darya.ya2608@gmail.com](gmail.com)
                 </div>
             </div>
         </div>
@@ -92,7 +79,7 @@ background-color: #b8cfd6;">
                     font-family: sans-serif;
                     text-align: left;
                     ">ABOUT ME</h3>
-                    <hr>
+                    ---
                     <p>My name is Dasha. I am very good at my job.</p>
                 </div>
                 <div id="experience">
@@ -100,36 +87,31 @@ background-color: #b8cfd6;">
                     font-family: sans-serif;
                     text-align: left;
                     ">WORK EXPIERIENCE</h3>
-                    <hr>
-                    <ul>
-                        <li>0.5 years tech support in online english shcool</li>
-                        <li>1 year child teacher in jewish youth program</li>
-                    </ul>
+                    ---
+                    + 0.5 years tech support in online english shcool
+                    + 1 year child teacher in jewish youth program
                 </div>
                 <div id="skills">
                     <h3 style="
                     font-family: sans-serif;
                     text-align: left;
                     ">SKILLS</h3>
-                    <hr>
-                    <ol>
-                        <li>C# 1.5 years</li>
-                        <li>C++ 1 year</li>
-                        <li>Python 1.5 years</li>
-                        <li>HTML 1 week</li>
-                        <li>CSS 1 week</li>
-                        <li>english level B2</li>
-                        <li>ITstep academy 2 years</li>
-                    </ol>
+                    ---
+                    1. C# 1.5 years
+                    1. C++ 1 year
+                    1. Python 1.5 years
+                    1. HTML 1 week
+                    1. CSS 1 week
+                    1. english level B2
+                    1. ITstep academy 2 years
                 </div>
                 <div id="code_ex">
                     <h3 style="
                     font-family: sans-serif;
                     text-align: left;
                     ">CODE EXAMPLE</h3>
-                    <hr>
-                    <code>
-                        using System.Text.Json;<br>
+                    ---
+                    '   using System.Text.Json;<br>
                         <br>
                         Person tom = new Person("Tom", 37);<br>
                         string json = JsonSerializer.Serialize(tom);<br>
@@ -146,8 +128,7 @@ background-color: #b8cfd6;">
                         &nbsp;    &nbsp;    Name = name; <br>
                         &nbsp;    &nbsp;    Age = age; <br>
                         &nbsp;    } <br>
-                        } <br>
-                    </code>
+                        } <br>'
                 </div>
             </div>
         </div>
