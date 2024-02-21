@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body >
+<body>
     <div style="
     background-color: crimson;
     margin: auto;
@@ -14,8 +14,8 @@
         height: 1000px;
         float: left;
         background-color: #000;
-        color: #fff;" markdown = "1">
-            ![my photo](pic.jpg#my_pic)
+        color: #fff;">
+            ![my photo](pic.jpg){#my_pic}
             <div style="
             font-family: sans-serif;
             margin-left: 30px;
