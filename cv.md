@@ -75,9 +75,11 @@
             margin-left: 30px;
             margin-right: 30px;">
                 <div id="about" markdown = "1">
+
                     ### ABOUT ME{#identifier .h3}
                     ---
-                    My name is Dasha. I am very good at my job./
+                    My name is Dasha. I am very good at my job.
+
                 </div>
                 <div id="experience">
                     <h3 style="
