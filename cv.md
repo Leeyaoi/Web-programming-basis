@@ -74,13 +74,10 @@
             <div style="
             margin-left: 30px;
             margin-right: 30px;">
-                <div id="about">
-                    <h3 style="
-                    font-family: sans-serif;
-                    text-align: left;
-                    ">ABOUT ME</h3>
+                <div id="about" markdown = "1">
+                    ### ABOUT ME{#identifier .h3}
                     ---
-                    <p>My name is Dasha. I am very good at my job.</p>
+                    My name is Dasha. I am very good at my job./
                 </div>
                 <div id="experience">
                     <h3 style="
