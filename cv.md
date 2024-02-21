@@ -15,7 +15,7 @@
         float: left;
         background-color: #000;
         color: #fff;">
-            ![my photo](pic.jpg){#my_pic}
+            ![my photo](pic.jpg{:#my_pic})
             <div style="
             font-family: sans-serif;
             margin-left: 30px;
