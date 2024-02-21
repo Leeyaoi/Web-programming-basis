@@ -1,1 +1,1 @@
-https://leeyaoi.github.io/Markdown/cv
+https://leeyaoi.github.io/Markdown/cv.md
