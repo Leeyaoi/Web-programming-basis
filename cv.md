@@ -11,7 +11,7 @@
 - [MGOL1](http://firstlyceum.by) 2018-2022
 - [BRU](http://bru.by) 2022-2026
 
-### ABOUT ME{#identifier .h3}
+### ABOUT ME
 
 ---
 
@@ -24,7 +24,7 @@ My name is Dasha. I am very good at my job.
 - 0.5 years tech support in online english shcool
 - 1 year child teacher in jewish youth program
 
-### SKILLS{#identifier .h3}
+### SKILLS
 
 ---
 
@@ -42,11 +42,11 @@ My name is Dasha. I am very good at my job.
 
 You can call my mom. She will tell you I'm the best
 
-### CODE EXAMPLE{#identifier .h3}
+### CODE EXAMPLE
 
 ---
 
-    'using System.Text.Json;
+    using System.Text.Json;
     Person tom = new Person("Tom", 37);
     string json = JsonSerializer.Serialize(tom);
     Console.WriteLine(json);
@@ -63,12 +63,14 @@ You can call my mom. She will tell you I'm the best
             Name = name;
             Age = age;
         }
-    }'
+    }
 
 ### CONTACTS
 
 ---
 
 A1: +375447084688
+
 Life: +375333371184
+
 email: [darya.ya2608@gmail.com](gmail.com)
