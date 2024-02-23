@@ -69,8 +69,8 @@ You can call my mom. She will tell you I'm the best
 
 ---
 
-A1: +375447084688
+A1: +375\*\*\*\*\*\*\*88
 
-Life: +375333371184
+Life: +375\*\*\*\*\*\*\*84
 
-email: [darya.ya2608@gmail.com](gmail.com)
+email: [d\*\*\*\*\*\*\*@gmail.com](gmail.com)
