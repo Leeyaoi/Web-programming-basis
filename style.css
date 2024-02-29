@@ -1,0 +1,199 @@
+body{
+    background: #E5E5E5;
+    margin: 0;
+}
+
+.block{
+    width: 100%;
+    height: 47rem;
+    flex-shrink: 0;
+    display: flex;
+}
+
+#content{
+    margin: auto;
+    margin-top: 0px;
+    width: 100%;
+    background: #FFF;
+    max-width: 1440px;
+    height: fit-content;
+    display: grid;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    flex-shrink: 0;
+    display: flex;
+}
+
+#promotion{
+    background: #f9f4fa;
+}
+
+#shop_now_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    width: 9.25rem;
+    height: 9.25rem;
+    border-radius: 50%;
+    background: #000;
+
+    position: absolute;
+    right: 3rem;
+    bottom: -6rem;
+}
+
+#prom_text{
+    margin: auto;
+    font-family: Ogg;
+    margin-top: 10.5rem;
+    color: #000;
+    text-align: center;
+    justify-self: center;
+    font-size: 7.3125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 7.5rem;
+}
+
+#menu{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto;
+    margin-left: 2rem;
+    margin-right: 7.5rem;
+}
+
+#search{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+#prism{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#header_text{
+    color: #000;
+    text-align: center;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem; /* 100% */
+    text-transform: uppercase;   
+    margin: auto;
+}
+
+#decor{
+    width: 100%;
+    height: 3rem;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding-top: 1.7rem;
+}
+
+#grad_promo{
+    display: grid;
+
+    background: linear-gradient(242deg, #FFF 0.5%, rgba(255, 255, 255, 0.00) 80.8%), rgba(234, 193, 191, 0.64);
+}
+
+#card_img{
+    margin-right: 5rem;
+    margin-top: 3.75rem;
+    position: absolute;
+    display: flex;
+    justify-self: end;
+    z-index: 9;
+    width: 27.5rem;
+    height: 38rem;
+}
+
+#card_back{
+    display: flex;
+    position: absolute;
+    width: 35.625rem;
+    height: 36.75rem;
+    border-radius: 7.25rem;
+    background: rgba(63, 202, 135, 0.31);
+    filter: blur(50px);
+    justify-self: end;
+    margin-top: 7.1rem;
+    margin-right: 2rem;
+}
+
+#text_n_buttn{
+    margin-top: 7rem;
+    margin-left: 3rem;
+
+    color: #000;
+    font-family: Ogg;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.25rem; /* 141.667% */
+
+    display: block;
+    justify-self: start;
+    width: 33rem;
+    height: 41.25rem;
+    flex-shrink: 0;
+}
+
+#shop_all_btn{
+    width: 11.83469rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 100% */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#crystal_img{
+    width: 26rem;
+    height: 28rem;
+    flex-shrink: 0;
+    align-self: center;
+    margin-left: 9rem;
+}
