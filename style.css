@@ -111,7 +111,7 @@ header{
 
 #decor{
     width: 100%;
-    height: 3rem;
+    height: 3.7rem;
     flex-shrink: 0;
 
     color: #000;
@@ -131,36 +131,38 @@ header{
 #grad_promo{
     display: grid;
 
+    height: 56.2rem;
+
     background: linear-gradient(242deg, #FFF 0.5%, rgba(255, 255, 255, 0.00) 80.8%), rgba(234, 193, 191, 0.64);
 }
 
 #card_img{
-    margin-right: 5rem;
-    margin-top: 3.75rem;
+    margin-right: 7.2rem;
+    margin-top: 4.7rem;
     position: absolute;
     display: flex;
     justify-self: end;
     z-index: 1;
-    width: 27.5rem;
-    height: 38rem;
+    width: 29.5rem;
+    height: 42.1rem;
 }
 
 #card_back{
     display: flex;
     position: absolute;
-    width: 35.625rem;
-    height: 36.75rem;
+    width: 35rem;
+    height: 37rem;
     border-radius: 7.25rem;
     background: rgba(63, 202, 135, 0.31);
     filter: blur(50px);
     justify-self: end;
     margin-top: 7.1rem;
-    margin-right: 2rem;
+    margin-right: 6rem;
 }
 
 #text_n_buttn{
-    margin-top: 7rem;
-    margin-left: 3rem;
+    margin-top: 3.5rem;
+    margin-left: 8rem;
     z-index: 9;
 
     color: #000;
@@ -178,6 +180,9 @@ header{
 }
 
 #shop_all_btn{
+    margin-top: 5.1rem;
+    margin-left: -0.9rem;
+
     width: 11.83469rem;
     height: 3rem;
     flex-shrink: 0;
@@ -197,7 +202,8 @@ header{
 }
 
 #crystal_img{
-    width: 36rem;
+    margin-top: 2.2rem;
+    width: 36.3rem;
     height: 38rem;
     flex-shrink: 0;
     align-self: center;
@@ -237,6 +243,11 @@ header{
     margin-bottom: 2rem;
 }
 
+#review{
+    height: 60rem;
+    border-bottom: #000 10px;
+}
+
 .review{
     color: #000;
     text-align: center;
@@ -249,6 +260,7 @@ header{
 }
 
 .author{
+    margin-top: 1.5rem;
     color: #000;
     text-align: center;
     font-family: "Basis Grotesque Pro", sans-serif;
@@ -260,19 +272,25 @@ header{
 }
 
 #first_review_block{
-    margin-top: 11rem;
-    margin-left: 15rem;
+    margin-top: 16rem;
+    margin-left: 15.7rem;
     align-items: center;
 }
 
 .separator{
     margin: auto;
     display: block;
+    padding-bottom: 1.5rem;
+}
+
+#popular{
+    height: 54.2rem;
 }
 
 #list{
-    margin-left: 8rem;
-    margin-top: 11.3rem;
+    display: inline;
+    margin-left: 0.7rem;
+    margin-top: 10rem;
     width: 20rem;
     height: 30rem;
     padding: 0;
@@ -290,6 +308,7 @@ header{
 }
 
 #find_your_match_btn{ 
+    margin-top: 3.1rem;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -306,4 +325,70 @@ header{
     font-weight: 500;
     line-height: 1.25rem;
     text-transform: uppercase;
+}
+
+#buttons{
+    display: inline;
+    margin-top: 11.5rem;
+}
+
+.button{
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+
+    border-radius: 0.625rem;
+    filter: blur(10px);
+}
+
+#prod_cards{
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+
+    margin-left: 10.2rem;
+    margin-top: 10.2rem;
+}
+
+.product_card{
+    display: inline-block;
+    width: 21.7rem;
+    height: 33.8rem;
+    flex-shrink: 0;
+
+    margin-top: 0%;
+    margin-right: 1.2rem;
+
+    border-radius: 1rem;
+    border: 1px solid #EAC1BF;
+    background: #FFF;
+}
+
+.prod_name{
+    display: block;
+    width: 100%;
+    margin-top: 2.5rem;
+    
+    color: #000;
+    text-align: center;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 125% */
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+}
+
+#tower_photo{
+    /*margin-top: 6rem;*/
+    margin-left: 3rem;
+    height: 16rem;
+}
+
+#pyramid_photo{
+    height: 14rem;
 }
