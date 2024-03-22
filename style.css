@@ -111,7 +111,7 @@ header{
 
 #decor{
     width: 100%;
-    height: 3.7rem;
+    height: 4.2rem;
     flex-shrink: 0;
 
     color: #000;
@@ -125,7 +125,7 @@ header{
     white-space: nowrap;
     overflow: hidden;
 
-    padding-top: 1.7rem;
+    padding-top: 1.2rem;
 }
 
 #grad_promo{
@@ -384,11 +384,208 @@ header{
 }
 
 #tower_photo{
-    /*margin-top: 6rem;*/
-    margin-left: 3rem;
-    height: 16rem;
-}
-
-#pyramid_photo{
     height: 14rem;
 }
+
+#pyr_photo{
+    height: 14rem;
+}
+
+.prod_price{
+    display: block;
+    width: 100%;
+    margin-top: 2.5rem;
+    
+    color: #000;
+    text-align: center;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 125% */
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+}
+
+#shop_by_int{
+    background-color: #f3f2f2;
+    height: 32.5rem;
+}
+
+#shop_int{
+    margin-top: 6rem;
+
+    color: #000;
+    text-align: center;
+    font-family: Ogg;
+    font-size: 2.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.25rem; /* 144.681% */
+}
+
+.circle_n_text{
+    display: inline-block;
+    margin-left: 5.05rem;
+}
+
+#circles_block{
+    margin-top: 5.5rem;
+    margin-left: 1rem;
+}
+
+.circ_text{
+    text-align: center;
+}
+
+#love{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    border-radius: 1.9375rem;
+    background: rgba(185, 86, 187, 0.35);
+    filter: blur(25px);
+}
+
+#gifts_o_grad{
+    height: 57.8rem;
+    background-color: #FFF;
+}
+
+#text_gifts{
+    display: block;
+    margin-top: 8rem;
+
+    color: #000;
+    text-align: center;
+    font-family: Ogg;
+    font-size: 7.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 7.5rem; /* 103.448% */
+}
+
+#kits{
+    display: block;
+    margin-left: 3.4rem;
+    margin-top: -2.15rem;
+}
+
+.kit_block{
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.kit_photo{
+    height: 19.1rem;
+    width: 27.3rem;
+}
+
+.kit_name{
+    margin-top: 0.6rem;
+
+    color: #000;
+    font-family: Ogg;
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem; /* 104.348% */
+}
+
+.kit_price{
+    margin-top: -2.2rem;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 160% */
+}
+
+#join_club{
+    display: flex;
+
+    background: linear-gradient(270deg, #FFF 45.52%, rgba(255, 255, 255, 0.58) 100%), #EAC1BF;
+    height: 26.5rem;
+}
+
+#join_text{
+    margin-top: 1.5rem;
+    max-width: 18rem;
+    margin-right: 2.6rem;
+    margin-left: 4rem;
+}
+
+#big_join{
+    color: #000;
+    font-family: Ogg;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem; /* 116.667% */
+}
+
+#small_join{
+    margin-top: -1.5rem;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+#join_btn{
+    flex-wrap: wrap;
+    display: flex;
+
+    margin-top: 1.45rem;
+    width: 10.5rem;
+    margin-left: -0.1rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background: #000;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Basis Grotesque Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 100% */
+    text-transform: uppercase;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.join_photo{
+    display: inline;
+    height: 18.6rem;
+
+    margin-top: 4rem;
+    margin-right: 1.5rem;
+}
+
+#ph1{
+    width: 24rem;
+}
+
+#ph2{
+    width: 11.6rem;
+}
+
+#ph3{
+    width: 24rem;
+}
+
+@font-face {
+    /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/ 
+    font-family: "Basis Grotesque Pro"; 
+    /* адрес шрифта и тип */
+    src: url("BasisGrotesquePro-Italic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }
