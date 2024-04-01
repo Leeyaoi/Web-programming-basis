@@ -1,1 +1,1 @@
-https://Leeyaoi.github.io/Web-programming-basis/
+https://Leeyaoi.github.io/Web-programming-basis/index.html
