@@ -33,7 +33,7 @@ header{
 }
 
 #promotion{
-    background: url(image.png);
+    background: url(pics/image.png);
     background-size: cover;
 }
 
@@ -211,7 +211,7 @@ header{
     flex-shrink: 0;
     align-self: center;
     margin-left: 9rem;
-    background-image: url(fhoto_crystal.png);
+    background-image: url(pics/fhoto_crystal.png);
     background-size: cover;
     display: flex;
 }
@@ -610,7 +610,6 @@ header{
     width: 6rem;
     height: 6rem;
     border-radius: 4.375rem;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 #rev_text{
@@ -677,7 +676,7 @@ header{
 }
 
 footer{
-    background: url(footer_bg.jpeg);
+    background: url(pics/footer_bg.jpeg);
     height: 30.9rem;
 }
 
@@ -731,7 +730,7 @@ footer{
     /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/ 
     font-family: "Basis Grotesque Pro"; 
     /* адрес шрифта и тип */
-    src: url("BasisGrotesquePro-Regular.ttf") format("truetype"); 
+    src: url("fonts/BasisGrotesquePro-Regular.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
   }
