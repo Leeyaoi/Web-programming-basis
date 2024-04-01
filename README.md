@@ -1,1 +1,1 @@
-https://Leeyaoi.github.io/Web-programming-basis/cv
+https://Leeyaoi.github.io/Web-programming-basis/
