@@ -5,6 +5,7 @@ body{
 
 p{
     font-family: sans-serif;
+    text-align: justify;
 }
 
 .block{
@@ -74,30 +75,32 @@ header{
 }
 
 #menu{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     margin: auto;
-    margin-left: 2rem;
+    margin-left: 2.7rem;
     margin-right: 7.5rem;
 }
 
 #search{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     margin: auto;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     margin-right: 1rem;
 }
 
 #prism{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2srem;
+    width: 2rem;
     margin: auto;
     margin-right: 2rem;
-    margin-left: 2rem;
 }
 
 #header_text{
+    margin-left: 23rem;
+    margin-top: 2.5rem;
+    margin-right: 25.9rem;
     color: #000;
     text-align: center;
     font-family: "Basis Grotesque Pro", sans-serif;
@@ -106,7 +109,6 @@ header{
     font-weight: 500;
     line-height: 1rem; /* 100% */
     text-transform: uppercase;   
-    margin: auto;
 }
 
 #decor{
@@ -174,7 +176,8 @@ header{
 
     display: block;
     justify-self: start;
-    width: 33rem;
+    width: 30rem;
+    text-align: left;
     height: 41.25rem;
     flex-shrink: 0;
 }
@@ -520,6 +523,7 @@ header{
 #big_join{
     color: #000;
     font-family: Ogg;
+    text-align: left;
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
@@ -533,6 +537,7 @@ header{
     font-family: "Basis Grotesque Pro", sans-serif;
     font-size: 1rem;
     font-style: normal;
+    text-align: left;
     font-weight: 400;
     line-height: 1.5rem; /* 150% */
 }
@@ -581,11 +586,152 @@ header{
     width: 24rem;
 }
 
+#left_arch{
+    margin-top: 2rem;
+    margin-left: 1.3rem;
+    height: 41.5rem;
+}
+
+#right_arch{
+    margin-top: 2rem;
+    height: 41.5rem;
+    margin-left: 5.12rem;
+}
+
+#single_review{
+    margin-top: 11.64rem;
+    margin-left: 4.5rem;
+    max-width: 37rem;
+    display: grid;
+}
+
+#avatar{
+    justify-self: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 4.375rem;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+#rev_text{
+    margin-top: -1.7rem;
+    color: #000;
+    font-family: Ogg;
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem; /* 156.522% */
+}
+
+#big_author{
+    margin-top: -4.7rem;
+    color: #000;
+    text-align: center;
+    font-family: "Basis Grotesque Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 100% */
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+}
+
+#big_sep{
+    margin-top: -6.8rem;
+    justify-self: center;
+    width: 1.6875rem;
+    height: 1.6875rem;
+    flex-shrink: 0;
+}
+
+#ig_photo{
+    background-color: #FFF;
+    height: 19.3rem;
+}
+
+#ig_text{
+    margin-left: 3.4rem;
+    margin-top: 1.2rem;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 100% */
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+}
+
+#ig_photos{
+    display: flex;
+    margin-top: 1.65rem;
+    margin-left: 3.35rem;
+}
+
+.ig_photo{
+    display: inline;
+    height: 13.05rem;
+    width: 13.15rem;
+    margin-right: 1rem;
+}
+
+footer{
+    background: url(footer_bg.jpeg);
+    height: 30.9rem;
+}
+
+#giant_logo{
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro";
+    font-size: 11rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 100% */
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    transform: scaleY(1.2);
+    transform: scaleX(1.005);
+}
+
+#socials{
+    margin-top: -1.2rem;
+    margin-left: 2.7rem;
+}
+
+.social{
+    display: inline;
+    margin-right: 5rem;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 100% */
+    text-transform: uppercase;
+}
+
+#rights{
+    margin-top: 2.6rem;
+    margin-left: 2.5rem;
+
+    color: #000;
+    font-family: "Basis Grotesque Pro";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 200% */
+}
+
 @font-face {
     /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/ 
     font-family: "Basis Grotesque Pro"; 
     /* адрес шрифта и тип */
-    src: url("BasisGrotesquePro-Italic.ttf") format("truetype"); 
+    src: url("BasisGrotesquePro-Regular.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
   }
