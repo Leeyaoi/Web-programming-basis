@@ -18,7 +18,7 @@ p{
 #content{
     margin: auto;
     margin-top: 0px;
-    width: 100%;
+    width: fit-content;
     background: #FFF;
     max-width: 1440px;
     height: fit-content;
@@ -56,9 +56,10 @@ header{
     border-radius: 50%;
     background: #000;
 
-    position: absolute;
-    right: 3rem;
-    bottom: -6rem;
+    float: right;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 
 #shop_now_btn:hover{
@@ -68,6 +69,7 @@ header{
 
 #prom_text{
     margin: auto;
+    margin-left: 25rem;
     font-family: Ogg;
     margin-top: 10.5rem;
     color: #000;
@@ -84,7 +86,6 @@ header{
     width: 2rem;
     margin: auto;
     margin-left: 2.7rem;
-    margin-right: 7.5rem;
 }
 
 #search{
@@ -96,9 +97,10 @@ header{
 }
 
 #prism{
-    height: 2srem;
+    height: 2rem;
     width: 2rem;
-    margin: auto;
+    align-self: center;
+    float: right;
     margin-right: 2rem;
 }
 
