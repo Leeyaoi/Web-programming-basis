@@ -61,6 +61,11 @@ header{
     bottom: -6rem;
 }
 
+#shop_now_btn:hover{
+    color: #000;
+    background-color: #fba4cd;
+}
+
 #prom_text{
     margin: auto;
     font-family: Ogg;
@@ -128,6 +133,13 @@ header{
     overflow: hidden;
 
     padding-top: 1.2rem;
+}
+
+span{
+    background: url("/pics/decor_back.png") lightgray 50% / cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #grad_promo{
@@ -374,6 +386,7 @@ header{
     display: block;
     width: 100%;
     margin-top: 2.5rem;
+    margin-bottom: 7rem;
     
     color: #000;
     text-align: center;
@@ -388,6 +401,8 @@ header{
 
 #tower_photo{
     height: 14rem;
+    margin-left: 3.7rem;
+    margin-top: 1rem;
 }
 
 #pyr_photo{
@@ -438,6 +453,7 @@ header{
 }
 
 .circ_text{
+    margin-top: 1.3rem;
     text-align: center;
 }
 
