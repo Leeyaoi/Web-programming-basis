@@ -60,6 +60,8 @@ header{
     align-self: flex-end;
     margin-bottom: 2rem;
     margin-right: 2rem;
+
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 #shop_now_btn:hover{
@@ -86,6 +88,29 @@ header{
     width: 2rem;
     margin: auto;
     margin-left: 2.7rem;
+    animation: unrotate 3s ease-in-out;
+}
+
+@keyframes unrotate {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+#menu:hover{
+    animation: rotate 3s ease-in-out;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
 }
 
 #search{
@@ -137,6 +162,23 @@ header{
     padding-top: 1.2rem;
 }
 
+#decor_text {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
 span{
     background: url("/pics/decor_back.png") lightgray 50% / cover no-repeat;
     background-clip: text;
@@ -161,6 +203,38 @@ span{
     z-index: 1;
     width: 29.5rem;
     height: 42.1rem;
+    
+    animation-duration: 1.5s;
+    animation-name: card_bounce_back;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+@keyframes card_bounce_back{
+    from{
+        transform: scale(0.7);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+#card_img:hover{
+    transform: scale(0.7);
+    animation-duration: 1.5s;
+    animation-name: card_bounce;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes card_bounce{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.7);
+    }
 }
 
 #card_back{
@@ -218,6 +292,24 @@ span{
     justify-content: center;
 }
 
+#shop_all_btn:hover{
+    animation: color_change 3s infinite alternate;
+    animation-timing-function: ease-in-out;
+    color: #000;
+}
+
+@keyframes color_change {
+    from{
+        background-color: #EAC1BF;
+    }
+    to{
+        background-color: #fba4cd;
+    }
+    50%{
+        background-color: coral;
+    }
+}
+
 #crystal_img{
     margin-top: 2.2rem;
     width: 36.3rem;
@@ -258,6 +350,31 @@ span{
 
     margin: auto;
     margin-bottom: 2rem;
+    
+    animation: smaller_btn 3s ease-in-out;
+}
+
+#sub_n_save_btn:hover{
+    animation: bigger_btn 3s ease-in-out;
+    transform: scale(1.5);
+}
+
+@keyframes bigger_btn {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes smaller_btn {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 #review{
@@ -333,7 +450,7 @@ span{
     width: 15.78775rem;
     height: 3rem;
     border-radius: 2rem;
-    background: url(https://s3-alpha-sig.figma.com/img/b662/1527/af176280612710b93d1f71566ba2b052?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TTxugSZPAXlNNdxOfRI91kEk7hnZyXJGP8IdHVYtc9qTYEvpJBKZ~EZWj~xzzQuVKlXMq0RykvU~-qQZn3VWOxrUKCAsOVPRAy0BdYIjJejmEmbKJ~NPFlXFEKnGashaKhcYwCc1C9A4QxeXO7OdGuDXEG6srEUq8tfhw9QM0qjwY7oKkWZgLBdn~P24N5rW4tkRlmr1NiXHwtA25vYUaZFnZyv0ujavr0Ho3KGYQ7JWmOp3SJSKewNH2edgRirfVjQUPb6CM9b~O74FK-xzTUfeJOQHzktFGpZCPVMlKCfa2Wsdnmfx00rvy-Rc5O3kwHeePpxz9Z0PWUhsZgkQkw__);
+    background-color: #f5dbd9;
     color: #000;
     text-align: center;
     font-family: "Basis Grotesque Pro", sans-serif;
@@ -342,6 +459,9 @@ span{
     font-weight: 500;
     line-height: 1.25rem;
     text-transform: uppercase;
+}
+#find_your_match_btn:hover{
+    animation: color_change 3s infinite alternate;
 }
 
 #buttons{
@@ -382,6 +502,12 @@ span{
     border-radius: 1rem;
     border: 1px solid #EAC1BF;
     background: #FFF;
+
+    transition: margin-top 0.5s ease-in-out;
+}
+
+.product_card:hover{
+    margin-top: -5%;
 }
 
 .prod_name{
@@ -449,6 +575,10 @@ span{
     margin-left: 5.05rem;
 }
 
+.circle_n_text:hover{
+    margin-top: 1%;
+}
+
 #circles_block{
     margin-top: 5.5rem;
     margin-left: 1rem;
@@ -497,9 +627,34 @@ span{
     margin-right: 0.7rem;
 }
 
+.kit_photo:hover{
+    animation: blur_photo 1s ease-in-out;
+    filter: blur(50px);
+}
+
+@keyframes blur_photo {
+    from{
+        filter: blur(0);
+    }
+    to{
+        filter: blur(50px);
+    }
+}
+
 .kit_photo{
     height: 19.1rem;
     width: 27.3rem;
+    animation: unblur_photo 1s ease-in-out;
+    filter: blur(0);
+}
+
+@keyframes unblur_photo {
+    from{
+        filter: blur(50px);
+    }
+    to{
+        filter: blur(0);
+    }
 }
 
 .kit_name{
@@ -584,6 +739,10 @@ span{
     justify-content: center;
 }
 
+#join_btn:hover{
+    animation: color_change 3s infinite alternate;
+}
+
 .join_photo{
     display: inline;
     height: 18.6rem;
@@ -640,6 +799,17 @@ span{
     line-height: 4.5rem; /* 156.522% */
 }
 
+#rev_text:hover{
+    animation: jump_big 3s ease;
+}
+
+@keyframes jump_big {
+    50%{
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+}
+
 #big_author{
     margin-top: -4.7rem;
     color: #000;
@@ -691,6 +861,30 @@ span{
     height: 13.05rem;
     width: 13.15rem;
     margin-right: 1rem;
+    animation: unselect 1s ease-in-out;
+}
+
+@keyframes unselect {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.ig_photo:hover{
+    animation: select 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes select {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
 
 footer{
@@ -730,6 +924,26 @@ footer{
     font-weight: 400;
     line-height: 1.5rem; /* 100% */
     text-transform: uppercase;
+}
+
+.social:hover{
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-name: link;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes link {
+    from{
+        color: #fba4cd;
+    }
+    to{
+        color: blueviolet;
+    }
+    50%{
+        color: crimson;
+    }
 }
 
 #rights{
