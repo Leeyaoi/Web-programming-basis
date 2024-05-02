@@ -47,3 +47,18 @@ const pin_swiper = new Swiper('.eco_pins_slider .swiper', {
     prevEl: '.swiper-button-prev',
   },
 }) ;
+
+const mode_changer = document.getElementById('dark_theme');
+mode_changer.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+  console.log(newTheme);
+  if(newTheme == 'dark'){
+    mode_changer.innerHTML = "LIGHT MODE"
+  }
+  else{
+    mode_changer.innerHTML = "DARK MODE"
+  }
+  localStorage.setItem('themePreference', newTheme);
+  document.documentElement.setAttribute('data-theme', newTheme);
+});

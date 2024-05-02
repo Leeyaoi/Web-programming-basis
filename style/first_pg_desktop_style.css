@@ -1,24 +1,40 @@
+html{
+    --body-bg: #E5E5E5;
+    --white: #fff;
+    --beige: #FBF6F0;
+    --brown: #270515;
+    --blue: #ABC0DB;
+}
+
+html[data-theme='dark'] {
+    --body-bg: #302929;
+    --white: #564040;
+    --beige: #453a2d;
+    --brown: #b47b45;
+    --blue: #3b587f;
+}
+
 body{
-    background: #E5E5E5;
+    background: var(--body-bg);
     margin: 0;
 }
 
 #white{
-    background: #fff;
+    background: var(--white);
 }
 
 #beige{
-    background: #FBF6F0;
+    background: var(--beige);
 }
 
 .button{
-    border: 2px solid #270515;
-    background: #270515;
+    border: 2px solid var(--brown);
+    background: var(--brown);
 
     display: flex;
     justify-content: center;
 
-    color: #FFF;
+    color: var(--white);
     text-align: center;
     font-family: Roboto, monospace;
     font-size: 0.85rem;
@@ -37,7 +53,7 @@ body{
     height: fit-content;
     display: grid;
 
-    color: #270515;
+    color: var(--brown);
     font-family: Roboto, monospace;
 }
 
@@ -125,13 +141,13 @@ header{
     margin-left: -12px;
     margin-top: 39px;
 
-    background: #ABC0DB;
+    background: var(--blue);
 
     height: 18px;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
 
-    color: #FFF;
+    color: var(--white);
     text-align: center;
     font-size: 0.9375rem;
     font-style: normal;
@@ -414,12 +430,12 @@ header{
 .button.summary{
     padding-top: 3px;
 
-    border-color: #ABC0DB;
+    border-color: var(--blue);
     width: 337px;
     font-family: Roboto, sans-serif;
     height: 38px;
-    background: #ABC0DB;
-    color: #270515;
+    background: var(--blue);
+    color: var(--brown);
     text-transform: none;
 }
 
