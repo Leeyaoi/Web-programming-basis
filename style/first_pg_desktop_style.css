@@ -1,0 +1,665 @@
+body{
+    background: #E5E5E5;
+    margin: 0;
+}
+
+#white{
+    background: #fff;
+}
+
+#beige{
+    background: #FBF6F0;
+}
+
+.button{
+    border: 2px solid #270515;
+    background: #270515;
+
+    display: flex;
+    justify-content: center;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, monospace;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.1rem;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+}
+
+.content{
+    margin: auto;
+    margin-top: 0px;
+    max-width: 1200px;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+
+    color: #270515;
+    font-family: Roboto, monospace;
+}
+
+header{
+    width: 1200px;
+    flex-shrink: 0;
+    height: 80px;
+    display: flex;
+}
+
+#logo{
+    width: 130px;
+    height: 22px;
+    margin-top: 26px;
+    margin-left: 24px;
+}
+
+#dark_theme{
+    margin-top: 21.5px;
+    margin-left: 16px;
+
+    width: 129px;
+    height: 32px;
+}
+
+#lang{
+    margin-top: 21.5px;
+    margin-left: 32px;
+
+    width: 128.5px;
+    height: 32px;
+}
+
+.menu_el{
+    text-align: right;
+    font-size: 0.9rem;
+    font-style: normal;
+    line-height: 1.1375rem; /* 130% */
+    text-transform: uppercase;
+    display: inline;
+}
+
+#menu{
+    margin-left: 167px;
+    margin-top: 29px;
+}
+
+#learn{
+    margin-left: 20px;
+}
+
+#sustainability{
+    margin-left: 15px;
+}
+
+#our_story{
+    margin-left: 2px;
+}
+
+#press{
+    margin-left: 15px;
+}
+
+#quiz{
+    margin-left: 17px;
+}
+
+#user_photo{
+    width: 22px;
+    height: 22px;
+
+    margin-top: 26px;
+    margin-left: 26px;
+}
+
+#shopping_cart{
+    width: 22px;
+    height: 22px;
+
+    margin-top: 26px;
+    margin-left: 27px;
+}
+
+#cart_num{
+    margin-left: -12px;
+    margin-top: 39px;
+
+    background: #ABC0DB;
+
+    height: 18px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 120% */
+}
+
+.big_section{
+    width: 100%;
+    height: 605px;
+}
+
+#find_routine{
+    width: 400px;
+
+    margin: auto;
+    margin-top: 172px;
+    
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.2rem;
+}
+
+#shop_now{
+    margin-top: 74px;
+    margin-left: 532px;
+
+    height: 43px;
+    width: 133px;
+
+    line-height: 2.65rem;
+}
+
+.awards_slider{
+    width: 100%;
+    height: 300px;
+}
+
+.products{
+    display: flex;
+    width: 100%;
+    height: 510px;
+}
+
+.prod_img{
+    display: block;
+    height: 333px;
+    width: 333.5px;
+}
+
+#quick_view{
+    height: 40px;
+    padding-top: 3px;
+}
+
+#product_block{
+    margin-top: 51px;
+    margin-left: 50px;
+
+    text-align: center;
+
+    width: 333.5px;
+}
+
+.prod_name{
+    margin-top: 5px;
+
+    font-size: 1.125rem;
+    letter-spacing: 0rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4625rem;
+}
+
+.review_num{
+    margin-top: -25px;
+
+    font-size: 0.9375rem;
+    letter-spacing: 0rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+}
+
+.prod_cost{
+    margin-top: -10px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9375rem;
+}
+
+.single_review{
+    width: 100%;
+    height: 173px;
+    text-align: center;
+}
+
+.big_text{
+    margin-top: 35px;
+
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0625rem;
+    letter-spacing: -0.2rem;
+}
+
+.big_author{
+    margin-top: -10px;
+
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40625rem;
+    letter-spacing: -0.1rem;
+}
+
+.eco_bottle{
+    display: flex;
+    width: 100%;
+    height: 713px;
+}
+
+.info{
+    margin: 0;
+    display: inline-block;
+    width: 600px;
+
+    text-align: center;
+    padding: 0;
+}
+
+.little_name{
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.975rem; /* 130% */
+    letter-spacing: 0.1125rem;
+    text-transform: uppercase;
+}
+
+.little_name.eco_first{
+    margin-top: 47px;
+    margin-left: 10px;
+}
+
+.big_take{
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.75rem;
+    letter-spacing: -0.1rem;
+}
+
+.big_take.eco_first{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.p1{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.4px; 
+}
+
+.p2{
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40625rem;
+    letter-spacing: -0.05rem;
+}
+
+.p2.eco_first{
+    margin-top: -27px;
+    width: 440px;
+}
+
+.p2.eco_second{
+    margin-top: 30px;
+    width: 450px;
+}
+
+.p2.pros_list{
+    width: 465px;
+    margin-top: 23px;
+}
+
+.sep{
+    width: 10px;
+    height: 10px;
+}
+
+#shop_hair_n_body{
+    margin-left: 202px;
+
+    margin-top: 32.5px;
+    height: 39.5px;
+    width: 194px;
+
+    padding-top: 3px;
+}
+
+#eco_bottle{
+    margin: 0;
+    display: inline-block;
+    height: 713px;
+    width: 599px;
+    object-fit: cover;
+}
+
+.advantages{
+    display: flex;
+    width: 100%;
+    height: 464.5px;
+}
+
+.adv_block{
+    display: inline-block;
+    margin-top: 58px;
+}
+
+.adv_block.first{
+    margin-left: 50px;
+}
+
+.adv_block.second{
+    margin-left: 40px;
+}
+
+.adv_block.third{
+    margin-left: 39.5px;
+}
+
+.adv_img{
+    display: block;
+    height: 260px;
+    width: 340px;
+    object-fit: cover;
+}
+
+.button.summary{
+    padding-top: 3px;
+
+    border-color: #ABC0DB;
+    width: 337px;
+    font-family: Roboto, sans-serif;
+    height: 38px;
+    background: #ABC0DB;
+    color: #270515;
+    text-transform: none;
+}
+
+.text.summary{
+    margin-top: 17px;
+    text-align: center;
+    width: 335px;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.21875rem;
+}
+
+.photos_n_buttons{
+    width: 100%;
+    height: 2607px;
+}
+
+.photo_n_btn_block{
+    display: flex;
+    width: 100%;
+}
+
+.info.n_btn{
+    display: inline-block;
+    height: 649px;
+}
+
+.photo{
+    width: 600px;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.photo.first{
+    height: 658px;
+}
+
+.photo.second{
+    height: 649px;
+}
+
+.photo.third{
+    height: 651px;
+}
+
+.photo.fourth{
+    height: 649.5px;
+}
+
+.little_name.first{
+    margin-top: 98.5px;
+}
+
+.big_take.first{
+    margin-top: -5px;
+    font-size: 4rem;
+    letter-spacing: -0.5rem;
+}
+
+.p1.first{
+    width: 450px;
+    margin-top: -37px;
+    margin-left: 75px;
+}
+
+.p2.first{
+    width: 490px;
+    margin-top: 35px;
+}
+
+.button.first{
+    margin-top: 57.5px;
+    margin-left: 185px;
+    padding-top: 7px;
+    height: 48px;
+    width: 218px;
+}
+
+.little_name.second{
+    margin-top: 102px;
+}
+
+.big_take.second{
+    margin-top: -11px;
+    font-size: 4rem;
+    letter-spacing: -0.5rem;
+}
+
+.p1.second{
+    width: 450px;
+    margin-top: -35px;
+    margin-left: 75px;
+}
+
+.p2.second{
+    width: 490px;
+    margin-top: -7px;
+}
+
+.button.second{
+    margin-top: 41.5px;
+    margin-left: 214px;
+    padding-top: 4px;
+    height: 39px;
+    width: 169px;
+}
+
+.little_name.third{
+    margin-top: 115px;
+}
+
+.big_take.third{
+    margin-top: -11px;
+    font-size: 4rem;
+    letter-spacing: -0.5rem;
+}
+
+.p1.third{
+    width: 450px;
+    margin-top: -35px;
+    margin-left: 75px;
+}
+
+.p2.third{
+    width: 480px;
+    margin-top: -7px;
+}
+
+.button.third{
+    margin-top: 41.5px;
+    margin-left: 223.5px;
+    padding-top: 4px;
+    height: 38px;
+    width: 151px;
+}
+
+.little_name.fourth{
+    margin-top: 80px;
+}
+
+.big_take.fourth{
+    margin-top: 2px;
+    font-size: 4rem;
+    letter-spacing: -0.5rem;
+}
+
+.p1.fourth{
+    width: 400px;
+    margin-top: -45px;
+    margin-left: 100px;
+}
+
+.p2.fourth{
+    width: 490px;
+    margin-top: -7px;
+}
+
+.button.fourth{
+    margin-top: 62px;
+    margin-left: 223.5px;
+    padding-top: 4px;
+    height: 39px;
+    width: 151px;
+}
+
+.hair_slider{
+    width: 100%;
+    height: 485px;
+}
+
+.eco_vision{
+    background-image: url("../source/eco_background.jpeg");
+    width: 100%;
+    height: 691px;
+}
+
+.eco_info{
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 366px;
+    padding-top: 40px;
+    width: 468px;
+    height: 501px;
+}
+
+.big_take.eco{
+    margin-top: -10px;
+    font-size: 3.5rem;
+}
+
+.p2.eco{
+    width: 410px;
+    margin-top: -25px;
+}
+
+.p2.eco2{
+    width: 400px;
+    margin-top: 25px;
+}
+
+.button.eco{
+    margin-top: 64px;
+    margin-left: 153.5px;
+    padding-top: 4px;
+
+    width: 158.5px;
+    height: 39px;
+}
+
+.eco_pins_slider{
+    width: 100%;
+    height: 300px;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+}
+
+.links_block{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-top: 10px;
+}
+
+.links{
+    display: inline-block;
+    margin-left: 66px;
+    margin-top: 81px;
+}
+
+.community{
+    display: inline-block;
+    margin-left: 105px;
+    margin-top: 79px;
+}
+
+.contacts{
+    display: inline-block;
+    margin-left: 115px;
+    margin-top: 83px;
+}
+
+.join{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 250px;
+}
+
+.rights{
+    display: block;
+
+    margin-top: 26.5px;
+    margin-left: -7px;
+
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.975rem;
+}
