@@ -12,21 +12,68 @@
 
 <body>
     <div class="content">
-        <header id="white">
+        <header class="header" id="white">
             <img src="../source/logo.png" alt="everist" id="logo">
-            <div class="button" id="dark_theme">Dark theme</div>
-            <div class="button" id="lang">Go RUS</div>
+            <div class="button usual" id="dark_theme">Dark mode</div>
+            <div class="button usual" id="lang">Go RUS</div>
             <div id="menu">
-                <p class="menu_el" id="shop">shop</p>
-                <p class="menu_el" id="learn">learn</p>
-                <p class="menu_el" id="sustainability">sustainability</p>
-                <p class="menu_el" id="our_story">our story</p>
-                <p class="menu_el" id="press">press</p>
-                <p class="menu_el" id="quiz">quiz</p>
+                <ul class="menu_list">
+                    <li>
+                        <a class="menu_el" href="#" id="shop">shop</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="learn">learn</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="sustainability">sustainability</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="our_story">our story</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="press">press</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="quiz">quiz</a>
+                    </li>
+                </ul>
             </div>
             <img src="../source/user_photo.jpeg" alt="user" id="user_photo">
-            <img src="../source/shopping_cart.jpeg" alt="cart" id="shopping_cart">
-            <p id="cart_num">0</p>
+            <div class="cart">
+                <img src="../source/shopping_cart.jpeg" alt="cart" id="shopping_cart">
+                <p id="cart_num">0</p>
+            </div>
+            <button id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="menu_b">
+                <ul class="menu_list">
+                    <li>
+                        <a class="menu_el" href="#" id="shop">shop</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="learn">learn</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="sustainability">sustainability</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="our_story">our story</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="press">press</a>
+                    </li>
+                    <li>
+                        <a class="menu_el" href="#" id="quiz">quiz</a>
+                    </li>
+                    <li>
+                        <div class="button for_mobile" id="dark_theme">Dark mode</div>
+                        <div class="button for_mobile" id="lang">Go RUS</div>
+                    </li>
+                </ul>
+            </div>
         </header>
         <div class="big_section" id="white">
             <div id="find_routine">
@@ -169,7 +216,7 @@
                 <img src="../source/photo2.png" alt="" class="photo second">
                 <div class="info n_btn second">
                     <p class="little_name second">High Performance</p>
-                    <p class="big_take second">It works, we <br> pinky promise.</p>
+                    <p class="big_take second">It works, we pinky promise.</p>
                     <p class="p1 second">We know that if your personal care products don't make your hair and skin feel
                         amazing, nothing else matters.</p>
                     <p class="p2 second">We have high expectations of our hair and body care and our formulas won't
@@ -181,7 +228,7 @@
             <div class="photo_n_btn_block">
                 <div class="info n_btn third">
                     <p class="little_name third">Super Clean</p>
-                    <p class="big_take third">Always clean,<br>as it should be.</p>
+                    <p class="big_take third">Always clean, as it should be.</p>
                     <p class="p1 third">By removing the water from our formulas, Everist products can be formulated to a
                         new standard of clean.</p>
                     <p class="p2 third">Everist products are plant-based, vegan and cruelty-free as well as being
@@ -194,7 +241,7 @@
                 <img src="../source/photo4.jpeg" alt="" class="photo fourth">
                 <div class="info n_btn fourth">
                     <p class="little_name fourth">Made for Eco-Optimists</p>
-                    <p class="big_take fourth">It's the future<br>of beauty.</p>
+                    <p class="big_take fourth">It's the future of beauty.</p>
                     <p class="p1 fourth">Our products are thoughtfully designed, inside and out, as is the way we do
                         business.</p>
                     <p class="p2 fourth">Everist products are single-use plastic free (our tubes are pure 100% recycled
@@ -290,6 +337,10 @@
             <div class="links_block">
                 <div class="links">
                     Helpful Links
+                    <div class="for_mobile footer_arrow links">
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul>
                         <li>FAQ HELP CENTER</li>
                         <li>CAP BACK</li>
@@ -302,6 +353,10 @@
                 </div>
                 <div class="community">
                     Community
+                    <div class="for_mobile footer_arrow community">
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul>
                         <li>REVIEWS</li>
                         <li>PRESS</li>
@@ -315,6 +370,10 @@
                 </div>
                 <div class="contacts">
                     Contact Us
+                    <div class="for_mobile footer_arrow contacts">
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul>
                         <li> </li>
                         <li> </li>
@@ -327,6 +386,10 @@
                 </div>
                 <div class="join">
                     Join our eco-optimist community.
+                    <div class="for_mobile footer_arrow join">
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul>
                         <li>
                             You'll know about secret sales, new products before they launch, and occasionally we'll send
