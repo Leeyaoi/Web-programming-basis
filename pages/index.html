@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/base_css.css">
     <link rel="stylesheet" href="../style/first_pg.css">
     <link rel="stylesheet" href="../style/swiper-bundle.min.css" />
 
@@ -13,7 +14,9 @@
 <body>
     <div class="content">
         <header class="header" id="white">
-            <img src="../source/logo.png" alt="everist" id="logo">
+            <a href="index.html" style="margin: auto; width: 80%;">
+                <img src="../source/logo.png" alt="everist" id="logo">
+            </a>
             <div class="button usual" id="dark_theme">Dark mode</div>
             <div class="button usual" id="lang">Go RUS</div>
             <div id="menu">
@@ -38,7 +41,8 @@
                     </li>
                 </ul>
             </div>
-            <img src="../source/user_photo.jpeg" alt="user" id="user_photo">
+            <a href="log_in_page.html" style="z-index: 2; width: fit-content;">
+                <img src="../source/user_photo.jpeg" alt="user" id="user_photo"></a>
             <div class="cart">
                 <img src="../source/shopping_cart.jpeg" alt="cart" id="shopping_cart">
                 <p id="cart_num">0</p>
@@ -337,7 +341,7 @@
             <div class="links_block">
                 <div class="links list">
                     Helpful Links
-                    <div class="for_mobile footer_arrow links">
+                    <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
@@ -353,7 +357,7 @@
                 </div>
                 <div class="community list">
                     Community
-                    <div class="for_mobile footer_arrow community">
+                    <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
@@ -370,7 +374,7 @@
                 </div>
                 <div class="contacts list">
                     Contact Us
-                    <div class="for_mobile footer_arrow contacts">
+                    <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
@@ -386,7 +390,7 @@
                 </div>
                 <div class="join list">
                     Join our eco-optimist community.
-                    <div class="for_mobile footer_arrow join">
+                    <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
@@ -404,6 +408,7 @@
     </div>
     <script src="../script/swiper-bundle.min.js"></script>
     <script src="../script/swipers.js"></script>
+    <script src="../script/base_js.js"></script>
 </body>
 
 </html>

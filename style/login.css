@@ -1,0 +1,67 @@
+.login{
+    height: 500px;
+    width: 100%;
+}
+
+.sign_in{
+    height: 600px;
+    width: 100%;
+}
+
+form, .create_acc, .return_to_store{
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.login_label{
+    font-size: 26px;
+}
+
+#email, #password, #fname, #lname{
+    width: 100%;
+    height: 45px;
+    margin-top: 13px;
+    font-size: 16px;
+}
+
+#sign_in, #create{
+    width: 140px;
+    height: 60px;
+    margin-top: 13px;
+}
+
+.create_acc, .return_to_store{
+    display: block;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.return_to_store{
+    margin-top: 190px;
+}
+
+@media screen and (max-width: 767px) {
+    .login{
+        width: 320px;
+        height: 450px;
+    }
+
+    .sign_in{
+        height: 500px;
+    }
+
+    form, .create_acc, .return_to_store{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .return_to_store{
+        margin-top: 190px;
+    }
+
+    .create_acc{
+        margin-top: 80px;
+    }
+}
