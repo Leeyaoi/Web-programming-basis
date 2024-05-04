@@ -1,16 +1,20 @@
-const mode_changer = document.getElementById('dark_theme');
-mode_changer.addEventListener('click', () => {
+const mode_changer_big = document.getElementById('dark_theme');
+const mode_changer_small = document.querySelector('.menu_list #dark_theme');
+mode_changer_big.addEventListener('click', () => ChangeMode(mode_changer_big));
+mode_changer_small.addEventListener('click', () => ChangeMode(mode_changer_small));
+
+function ChangeMode(element){
   document.body.classList.toggle('dark-theme');
   const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
   if(newTheme == 'dark'){
-    mode_changer.innerHTML = "LIGHT MODE"
+    element.innerHTML = "LIGHT MODE"
   }
   else{
-    mode_changer.innerHTML = "DARK MODE"
+    element.innerHTML = "DARK MODE"
   }
   localStorage.setItem('themePreference', newTheme);
   document.documentElement.setAttribute('data-theme', newTheme);
-});
+}
 
 const burger_menu = document.getElementById('burger-menu');
 burger_menu.addEventListener('click', () => {
