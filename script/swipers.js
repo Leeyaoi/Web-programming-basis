@@ -103,10 +103,10 @@ const contacts_arrow = document.querySelector(".footer_arrow.contacts");
 const join_arrow = document.querySelector(".footer_arrow.join");
 
 function Open(element){
-  element.classList.toggle("open");
+  element.classList.toggle('open');
 }
 
-links_arrow.addEventListener('click', Open(document.querySelector(".links")));
-community_arrow.addEventListener('click', Open(document.querySelector(".community")));
-contacts_arrow.addEventListener('click', Open(document.querySelector(".contacts")));
-join_arrow.addEventListener('click', Open(document.querySelector(".join")));
+links_arrow.addEventListener('click',() => Open(document.querySelector(".links.list")));
+community_arrow.addEventListener('click',() => Open(document.querySelector(".community.list")));
+contacts_arrow.addEventListener('click',() => Open(document.querySelector(".contacts.list")));
+join_arrow.addEventListener('click',() => Open(document.querySelector(".join.list")));

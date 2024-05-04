@@ -1164,9 +1164,14 @@ li{
         margin-left: 100px;
     }
 
+    footer{
+        min-height: 200px;
+        height: fit-content;
+    }
+
     .links_block{
+        min-height: 200px;
         grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%;
     }
 
     .links_block ul{
