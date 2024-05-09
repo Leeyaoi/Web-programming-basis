@@ -4,7 +4,7 @@
 }
 
 .sign_in{
-    height: 600px;
+    height: fit-content;
     width: 100%;
 }
 
@@ -15,15 +15,37 @@ form, .create_acc, .return_to_store{
     margin-top: 120px;
 }
 
+form{
+    height: fit-content;
+
+}
+
 .login_label{
     font-size: 26px;
 }
 
-#email, #password, #fname, #lname{
+.input-box{
+    position: relative;
+}
+
+input{
     width: 100%;
     height: 45px;
     margin-top: 13px;
     font-size: 16px;
+    border-color: var(--brown);
+}
+
+#generatePass{
+    width: 30px;
+    height: 30px;
+}
+
+#gener{
+    font-size: larger;
+    left: 47px;
+    top: 80px;
+    position: absolute;
 }
 
 #sign_in, #create{
@@ -39,7 +61,16 @@ form, .create_acc, .return_to_store{
 }
 
 .return_to_store{
-    margin-top: 190px;
+    margin-top: 45px;
+    height: 70px;
+}
+
+.input-box .error-label{
+    color: red;
+}
+
+.error input{
+    border-color: red;
 }
 
 @media screen and (max-width: 767px) {
@@ -49,7 +80,7 @@ form, .create_acc, .return_to_store{
     }
 
     .sign_in{
-        height: 500px;
+        min-height: 750px;
     }
 
     form, .create_acc, .return_to_store{
@@ -58,7 +89,7 @@ form, .create_acc, .return_to_store{
     }
 
     .return_to_store{
-        margin-top: 190px;
+        margin-top: 45px;
     }
 
     .create_acc{
