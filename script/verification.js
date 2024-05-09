@@ -45,6 +45,7 @@ function generatePassword(length) {
 
 var checkbox = document.getElementById("generatePass")
 
+if(checkbox !== null){
 checkbox.addEventListener('change', ()=>{
     if(checkbox.checked){
         var pass = generatePassword(Math.floor(Math.random() * (20 - 8 + 1)) + 8);
@@ -56,6 +57,7 @@ checkbox.addEventListener('change', ()=>{
         document.getElementById("cPassword").value = "";
     }
 })
+}
 
 function validPassword(pass){
     var number = /[0-9]/
@@ -63,7 +65,6 @@ function validPassword(pass){
     var big = /[A-Z]/
     var spec = /[!@#$%^&*()_+-={}|;':"<>,./?]/
     if(String(pass).length < 8 || String(pass).length > 20){
-        console.log(String(pass).length)
         return false
     }
     if(!number.test(pass)){
@@ -149,7 +150,6 @@ function validation(form){
         
         if (input.dataset.type == "password") {
             var pass = document.getElementById("password").value;
-            var cpass = document.getElementById("cPassword").value;
             if (!(validPassword(pass))) {
                 removeError(input)
                 createError(input, `Password must be 8-20 chars long and contain at least 1 of each: big, small letters, number and special character`)
@@ -185,23 +185,3 @@ function validation(form){
 
     return result
 }
-
-document.getElementById("form").addEventListener("submit", function(event){
-    event.preventDefault();
-
-    if(validation(this)){
-        let user = {
-            firstName : document.getElementById("fname").value,
-            lastName : document.getElementById("lname").value,
-            middleName : document.getElementById("mname").value,
-            email : document.getElementById("email").value,
-            phoneNum : document.getElementById("phoneNum").value,
-            birthDate : document.getElementById("birthDate").value,
-            password : document.getElementById("password").value
-        }
-
-        addUser(user)
-
-        alert("Success")
-    }
-});

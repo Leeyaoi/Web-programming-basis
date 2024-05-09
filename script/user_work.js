@@ -20,5 +20,12 @@ function addUser(user){
     
     //fs.writeFile("../source/json/users.json", JSON.stringify(usersArray), err => {if (err) throw err})
 
-    console.log(JSON.stringify(user))
+    console.log(JSON.stringify(usersArray))
+}
+
+function login(user){
+    localStorage.setItem('role', user.role)
+    localStorage.setItem('userId', 
+        usersArray.findIndex((x) => x.email == user.email && x.password == user.password)
+    )
 }

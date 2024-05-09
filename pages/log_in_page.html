@@ -80,10 +80,16 @@
         </header>
 
         <div class="login" id="beige">
-            <form>
+            <form id="form">
                 <label class="login_label">Login</label><br>
-                <input type="text" id="email" name="email" placeholder="Email"><br>
-                <input type="text" id="password" name="password" placeholder="Password"><br><br>
+                <div class="input-box">
+                    <input type="text" id="email" name="email" placeholder="Email" data-required="true"
+                        data-type="email"><br>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="password" name="password" placeholder="Password" data-required="true"
+                        data-type="password"><br><br>
+                </div>
                 <input type="submit" class="button" id="sign_in" value="SIGN IN">
             </form>
             <a class="create_acc" href="sign_in_page.html">
@@ -162,6 +168,9 @@
     </div>
     <script src="../script/swiper-bundle.min.js"></script>
     <script src="../script/base_js.js"></script>
+    <script src="../script/user_work.js"></script>
+    <script src="../script/verification.js"></script>
+    <script src="../script/login_validation.js"></script>
 </body>
 
 </html>
