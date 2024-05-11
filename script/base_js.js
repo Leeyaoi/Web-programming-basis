@@ -16,9 +16,19 @@ function ChangeMode(element){
   document.documentElement.setAttribute('data-theme', newTheme);
 }
 
+var open = false;
+
 const burger_menu = document.getElementById('burger-menu');
 burger_menu.addEventListener('click', () => {
+  open = !open
   document.querySelector("header").classList.toggle('open');
+  document.querySelector("html").classList.toggle("unscroll");
+  if(open){
+    document.querySelector(".bg_shad").style.zIndex="1"
+  }
+  else{
+    document.querySelector(".bg_shad").style.zIndex="-1"
+  }
 });
 
 const links_arrow = document.querySelector(".links .footer_arrow");

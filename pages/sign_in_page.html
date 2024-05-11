@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/base_css.css">
     <link rel="stylesheet" href="../style/login.css">
+    <link type="Image/x-icon" href="../source/favicon.png" rel="icon">
 
     <title>Everist</title>
 </head>
 
 <body>
     <div class="content">
+        <div class="bg_shad"></div>
         <header class="header" id="white">
             <a href="index.html" style="width: 80%; margin: auto;">
                 <img src="../source/logo.png" alt="everist" id="logo">
@@ -21,26 +23,17 @@
             <div id="menu">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="#" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="#" id="learn">learn</a>
+                        <a class="menu_el" href="about.html" id="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="#" id="sustainability">sustainability</a>
-                    </li>
-                    <li>
-                        <a class="menu_el" href="#" id="our_story">our story</a>
-                    </li>
-                    <li>
-                        <a class="menu_el" href="#" id="press">press</a>
-                    </li>
-                    <li>
-                        <a class="menu_el" href="#" id="quiz">quiz</a>
+                        <a class="menu_el" href="add_product.html" id="add_product">add product</a>
                     </li>
                 </ul>
             </div>
-            <a href="log_in_page.html" style="z-index: 2; width: fit-content;">
+            <a href="log_in_page.html" style="z-index: 4; width: fit-content;">
                 <img src="../source/user_photo.jpeg" alt="user" id="user_photo"></a>
             <div class="cart">
                 <img src="../source/shopping_cart.jpeg" alt="cart" id="shopping_cart">
@@ -54,22 +47,13 @@
             <div id="menu_b">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="#" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="#" id="learn">learn</a>
+                        <a class="menu_el" href="about.html" id="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="#" id="sustainability">sustainability</a>
-                    </li>
-                    <li>
-                        <a class="menu_el" href="#" id="our_story">our story</a>
-                    </li>
-                    <li>
-                        <a class="menu_el" href="#" id="press">press</a>
-                    </li>
-                    <li>
-                        <a class="menu_el" href="#" id="quiz">quiz</a>
+                        <a class="menu_el" href="add_product.html" id="add_product">add product</a>
                     </li>
                     <li>
                         <div class="button for_mobile" id="dark_theme">Dark mode</div>
@@ -105,9 +89,9 @@
                 <div class="input-box">
                     <input type="text" id="password" name="password" placeholder="Password" data-required="true"
                         data-type="password"><br>
-                    <input type="checkbox" name="generatePass" id="generatePass">
                     <label for="generatePass" id="gener">Generate password</label>
                 </div>
+                <input type="checkbox" name="generatePass" id="generatePass">
                 <div class="input-box">
                     <input type="password" id="cPassword" name="cPassword" placeholder="Confirm password"
                         data-type="cPassword" data-required="true">

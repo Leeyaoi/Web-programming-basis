@@ -49,13 +49,25 @@ body{
     overflow: hidden;
     margin: auto;
     margin-top: 0px;
-    max-width: 1200px;
-    width: fit-content;
+    width: 1200px;
     height: fit-content;
     display: grid;
 
     color: var(--brown);
     font-family: Roboto, monospace;
+}
+
+.unscroll{
+    overflow: hidden;
+}
+
+.bg_shad{
+    position: fixed;
+    width: 1200px;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    opacity: 0.7;
 }
 
 header{
@@ -127,7 +139,6 @@ a{
 #user_photo{
     width: 22px;
     height: 22px;
-    z-index: 3;
 
     margin: auto;
 }
@@ -135,7 +146,7 @@ a{
 .cart{
     position: relative;
     margin: auto;
-    z-index: 1;
+    z-index: 3;
 }
 
 #shopping_cart{
@@ -147,7 +158,7 @@ a{
 
 #cart_num{
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     right: 50%;
     top: 0;
     background: var(--blue);
@@ -260,7 +271,7 @@ li{
 }
 
 @media screen and (max-width: 1200px){
-    .content{
+    .content, .bg_shad{
         max-width: 768px;
         margin: 0 auto;
     }
@@ -276,11 +287,11 @@ li{
     }
 
     #user_photo{
-        z-index: 1;
+        z-index: 3;
     }
 
     #burger-menu{
-        z-index: 1;
+        z-index: 3;
         display: block;
     }
 
@@ -289,6 +300,7 @@ li{
     }
 
     #menu_b{
+        z-index: 2;
         display: none;
         position: absolute;
         width: 200px;
@@ -336,7 +348,7 @@ li{
 }
 
 @media screen and (max-width: 767px){
-    .content{
+    .content, .bg_shad{
         min-width: 320px;
         width: 320px;
         margin: 0 auto;

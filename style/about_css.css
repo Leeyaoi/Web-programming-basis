@@ -1,0 +1,295 @@
+.big_block{
+    background-image: url("../source/eco_background.jpeg");
+    width: 100%;
+    height: 590px;
+}
+
+.big_block p{
+    color: var(--white);
+}
+
+.little_name{
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.975rem; /* 130% */
+    letter-spacing: 0.1125rem;
+    text-transform: uppercase;
+}
+
+.big_take{
+    width: 100%;
+    text-align: center;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.75rem;
+    letter-spacing: -0.1rem;
+}
+
+.p1{
+    width: 100%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.4px; 
+}
+
+.p2{
+    width: 100%;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.40625rem;
+    letter-spacing: -0.05rem;
+}
+
+.little_name.first{
+    margin-top: 200px;
+}
+
+.big_take.first{
+    margin-top: 10px;
+}
+
+.the_question{
+    display: flex;
+    width: 100%;
+    height: 650px;
+}
+
+.question_img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.question{
+    width: 50%;
+}
+
+.question .p1,.p2{
+    width: 80%;
+    margin: auto;
+}
+
+.little_name.second{
+    margin-top: 45px;
+}
+
+.big_take.second{
+    margin-top: 30px;
+}
+
+.p1.second{
+    margin-top: -15px;
+}
+
+.p2.second{
+    margin-top: 10px;
+}
+
+.our_customer{
+    display: flex;
+    width: 100%;
+    height: 650px;
+}
+
+.cust_img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.customer{
+    width: 50%;
+    height: 100%;
+}
+
+.customer .p1,.p2{
+    width: 80%;
+    margin: auto;
+}
+
+.little_name.third{
+    margin-top: 95px;
+}
+
+.big_take.third{
+    margin-top: 30px;
+}
+
+.p1.third{
+    margin-top: -15px;
+}
+
+.p2.third{
+    margin-top: 30px;
+}
+
+.shop_link{
+    background-image: url("../source/cremes.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.block{
+    background-color: var(--white);
+    width: 550px;
+    height: 300px;
+    padding-top: 50px;
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+.big_take.in_block{
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    font-size: 3.5rem;
+}
+
+.button.in_block{
+    width: 170px;
+    height: 40px;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.map{
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 1200px){
+    .big_block, .the_question, .our_customer, .shop_link, .map{
+        width: 768px;
+    }
+
+    .the_question{
+        flex-direction: column;
+        height: 1350px;
+    }
+
+    .question_img{
+        width: 768px;
+        height: 800px;
+    }
+
+    .question, .customer{
+        width: 100%;
+    }
+
+    .question p{
+        width: 700px;
+        margin-left: 34px;
+    }
+
+    .question .p1{
+        width: 768px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .our_customer{
+        flex-direction: column-reverse;
+        height: 1250px;
+    }
+
+    .cust_img{
+        width: 768px;
+        height: 600px;
+    }
+
+    .shop_link{
+        background-position: top right -200px;
+    }
+
+    .map{
+        padding-left: 85px;
+        padding-bottom: 62px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .big_block, .the_question, .our_customer, .shop_link, .map{
+        width: 320px;
+    }
+
+    .big_block p{
+        background-color: var(--white);
+        opacity: .7;
+        color: var(--brown)
+    }
+
+    .the_question{
+        flex-direction: column;
+        height: 1550px;
+    }
+
+    .question_img{
+        width: 320px;
+        height: 500px;
+    }
+
+    .question, .customer{
+        width: 100%;
+    }
+
+    .question p{
+        width: 250px;
+    }
+
+    .big_take.second{
+        margin-left: 15px;
+        font-size:4rem;
+    }
+
+    .question .p1{
+        width: 320px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .our_customer{
+        flex-direction: column-reverse;
+        height: 1190px;
+    }
+
+    .cust_img{
+        width: 320px;
+        height: 600px;
+    }
+
+    .big_take.third{
+        margin-left: 7px;
+        font-size:4rem;
+    }
+
+    .shop_link{
+        background-position: top right -200px;
+    }
+
+    .block{
+        width: 300px;
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .map{
+        padding-left: 32px;
+    }
+}
