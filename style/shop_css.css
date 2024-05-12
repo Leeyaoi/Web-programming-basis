@@ -1,0 +1,71 @@
+.products{
+    width: 1200px;
+    height: 1700px;
+}
+
+.products .swiper{
+    margin-top: 50px;
+    height: 1600px;
+    width: 100%;
+}
+
+.products .swiper-wrapper{
+    width: 65%;
+    margin-left: 35px;
+}
+
+.product_block{
+    text-align: center;
+    width: 333.5px;
+}
+
+.product_block .swiper{
+    margin: 0;
+    height: 333px;
+}
+
+.product_block .swiper-wrapper{
+    margin: 0;
+}
+
+.prod_name{
+    margin-top: 5px;
+
+    font-size: 1.125rem;
+    letter-spacing: 0rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4625rem;
+}
+
+.review_num{
+    margin-top: -25px;
+
+    font-size: 0.9375rem;
+    letter-spacing: 0rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+}
+
+.prod_cost{
+    margin-top: -10px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.9375rem;
+}
+
+.prod_img{
+    display: block;
+    height: 333px;
+    object-fit: cover;
+    width: 333px;
+}
+
+.quick_view{
+    height: 40px;
+    padding-top: 3px;
+}
