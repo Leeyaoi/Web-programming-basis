@@ -10,6 +10,7 @@ function login(user){
     localStorage.setItem('userId', 
         usersArray.findIndex((x) => x.email == user.email && x.password == user.password)
     )
+    localStorage.setItem("cart", JSON.stringify([]))
 }
 
 function getUser(){
@@ -20,4 +21,5 @@ function getUser(){
 function logout(){
     localStorage.setItem('role', 'none')
     localStorage.setItem('userId', -1)
+    localStorage.setItem("cart", JSON.stringify([]))
 }

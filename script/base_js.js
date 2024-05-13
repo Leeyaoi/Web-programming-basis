@@ -1,7 +1,13 @@
+if(localStorage.getItem("cart") !== null){
+  updateCartNum();
+}
+
 const mode_changer_big = document.getElementById('dark_theme');
 const mode_changer_small = document.querySelector('.menu_list #dark_theme');
 mode_changer_big.addEventListener('click', () => ChangeMode(mode_changer_big));
 mode_changer_small.addEventListener('click', () => ChangeMode(mode_changer_small));
+
+document.querySelector(".cart").addEventListener("click", () => {window.location.replace("../pages/cart.html")})
 
 function ChangeMode(element){
   document.body.classList.toggle('dark-theme');
@@ -44,3 +50,7 @@ links_arrow.addEventListener('click',() => Open(document.querySelector(".links.l
 community_arrow.addEventListener('click',() => Open(document.querySelector(".community.list")));
 contacts_arrow.addEventListener('click',() => Open(document.querySelector(".contacts.list")));
 join_arrow.addEventListener('click',() => Open(document.querySelector(".join.list")));
+
+function updateCartNum(){
+  document.querySelector("#cart_num").textContent = JSON.parse(localStorage.getItem("cart")).length;
+}

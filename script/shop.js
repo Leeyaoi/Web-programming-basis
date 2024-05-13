@@ -62,7 +62,9 @@ for(let i = 1; i < 27; i++){
                 });
             }
         }
-    }) 
+    })
+    
+    document.querySelector(".product_block.b"+i+" .button").addEventListener("click", () => {
+      addProduct(i);
+    })
 }
-
-console.log(prod_sw)
