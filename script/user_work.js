@@ -1,24 +1,7 @@
-let usersArray = [];
-
-//const fs = require('fs');
-
-function getUsers() {
-    fetch("../source/json/users.json")
-        .then(response => response.json())
-        .then(users => {
-            usersArray = users;
-        })
-        .catch(error => {
-            console.error('Ошибка при получении пользователей', error);
-        });
-};
-
-getUsers();
+var usersArray = JSON.parse(localStorage.getItem("users"));
 
 function addUser(user){
     usersArray.push(user)
-    
-    //fs.writeFile("../source/json/users.json", JSON.stringify(usersArray), err => {if (err) throw err})
 
     console.log(JSON.stringify(usersArray))
 }
@@ -28,4 +11,14 @@ function login(user){
     localStorage.setItem('userId', 
         usersArray.findIndex((x) => x.email == user.email && x.password == user.password)
     )
+}
+
+function getUser(){
+    console.log(usersArray)
+    return usersArray[localStorage.getItem('userId')];
+}
+
+function logout(){
+    localStorage.setItem('role', 'none')
+    localStorage.setItem('userId', -1)
 }

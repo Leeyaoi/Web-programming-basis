@@ -1,3 +1,7 @@
+if(localStorage.getItem('role') == "seller" || localStorage.getItem('role') == "client"){
+    window.location.replace("../pages/profile.html");
+}
+
 document.getElementById("form").addEventListener("submit", function(event){
     event.preventDefault();
 
