@@ -2,8 +2,7 @@ var usersArray = JSON.parse(localStorage.getItem("users"));
 
 function addUser(user){
     usersArray.push(user)
-
-    console.log(JSON.stringify(usersArray))
+    localStorage.setItem("users", JSON.stringify(usersArray))
 }
 
 function login(user){

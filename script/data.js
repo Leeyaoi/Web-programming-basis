@@ -1,6 +1,5 @@
 class Data{
     static getUsers(){
-        console.log("fuck")
         fetch("../source/json/users.json")
             .then(response => response.json())
             .then(users => {
