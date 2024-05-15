@@ -1,3 +1,7 @@
+html[data-theme='dark'] .banner{
+    background-image: url("../source/cremes.jpg");
+}
+
 .banner{
     background-image: url("../source/shop_top.jpg");
     background-size: cover;

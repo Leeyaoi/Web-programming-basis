@@ -623,7 +623,6 @@ function changeLang(langObj){
         const elements = document.querySelectorAll(`[data-lang=${key}]`)
         elements.forEach((element) => {
             if(element){
-                console.log(element.dataset.lang)
                 if(element.placeholder !== undefined){
                     element.placeholder = langObj[key][currentLang]
                 }

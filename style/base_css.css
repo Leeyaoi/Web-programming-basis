@@ -8,10 +8,10 @@ html{
 
 html[data-theme='dark'] {
     --body-bg: #302929;
-    --white: #564040;
-    --beige: #453a2d;
-    --brown: #b47b45;
-    --blue: #3b587f;
+    --white: #270515;
+    --beige: #564040;
+    --brown: #e6e1de;
+    --blue: #83b0eb;
 }
 
 body{
@@ -47,6 +47,10 @@ body{
 
 .button:hover{
     cursor: pointer;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 .content{
@@ -265,7 +269,7 @@ header.open #burger-menu span:nth-child(3){
 
 footer{
     width: 1200px;
-    height: 400px;
+    height: 410px;
 }
 
 .links_block{

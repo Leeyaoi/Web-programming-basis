@@ -2,6 +2,10 @@
     "ru": "Темная тема",
     "en": "Dark mode"
 },
+"d_mode":{
+    "ru": "СВЕТЛАЯ тема",
+    "en": "LIGHT mode"
+},
 "lang":{
     "ru":"Англ",
     "en":"Go RUS"

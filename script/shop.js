@@ -1,3 +1,10 @@
+/*if(localStorage.getItem('themePreference') == 'dark'){
+  document.querySelector(".banner").style.backgroundImage="url(../source/cremes.jpg)";
+}
+else{
+  document.querySelector(".banner").style.backgroundImage="url(../source/shop_top.jpg)";
+}*/
+
 const products_swiper = new Swiper('.products .swiper', {
     // Optional parameters
     loop: true,

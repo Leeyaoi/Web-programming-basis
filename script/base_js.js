@@ -2,6 +2,11 @@ if(localStorage.getItem("cart") !== null){
   updateCartNum();
 }
 
+if(localStorage.getItem("role") != "seller"){
+  document.querySelector("#menu #admin_panel").classList.add("hidden")
+  document.querySelector("#menu_b #admin_panel").classList.add("hidden")
+}
+
 const mode_changer_big = document.getElementById('dark_theme');
 const mode_changer_small = document.querySelector('.menu_list #dark_theme');
 mode_changer_big.addEventListener('click', () => ChangeMode(mode_changer_big));
@@ -10,14 +15,11 @@ mode_changer_small.addEventListener('click', () => ChangeMode(mode_changer_small
 if(localStorage.getItem('themePreference') == 'dark'){
   document.body.classList.toggle('dark-theme');
   document.documentElement.setAttribute('data-theme', 'dark');
-  if(localStorage.getItem("lang") == "ru"){
-    mode_changer_big.innerHTML = "СВЕТЛАЯ ТЕМА"
-    mode_changer_small.innerHTML = "СВЕТЛАЯ"
-  }
-  else{
-    mode_changer_big.innerHTML = "LIGHT MODE"
-    mode_changer_small.innerHTML = "LIGHT MODE"
-  }
+  document.getElementById("logo").src="../source/logo1.png"
+  console.log(localStorage.getItem("lang"))
+  console.log(mode_changer_big)
+  mode_changer_big.dataset.lang = "d_mode"
+  mode_changer_small.dataset.lang = "d_mode"
 }
 
 
@@ -27,6 +29,9 @@ function ChangeMode(element){
   document.body.classList.toggle('dark-theme');
   const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
   if(newTheme == 'dark'){
+    document.getElementById("logo").src="../source/logo1.png"
+    mode_changer_big.dataset.lang = "d_mode"
+    mode_changer_small.dataset.lang = "d_mode"
     if(localStorage.getItem("lang") == "ru"){
       mode_changer_big.innerHTML = "СВЕТЛАЯ ТЕМА"
       mode_changer_small.innerHTML = "СВЕТЛАЯ"
@@ -37,6 +42,9 @@ function ChangeMode(element){
     }
   }
   else{
+    document.getElementById("logo").src="../source/logo.png"
+    mode_changer_big.dataset.lang = "mode"
+    mode_changer_small.dataset.lang = "mode"
     if(localStorage.getItem("lang") == "ru"){
       mode_changer_big.innerHTML = "ТЕМНАЯ ТЕМА"
       mode_changer_small.innerHTML = "ТЕМНАЯ"
