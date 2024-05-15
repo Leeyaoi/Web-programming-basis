@@ -10,9 +10,10 @@ if(localStorage.getItem("role") != "seller"){
 
 if(usersArray.length == 0){
     document.querySelector(".user_header").textContent = "There are no users"
+    document.querySelector(".user_header").dataset.lang = "empty"
 }
 else{
-    document.querySelector(".user_header").textContent += "("+usersArray.length+")" 
+    document.querySelector(".user_header").innerHTML += "("+usersArray.length+")" 
     const wrapper = document.querySelector(".wrapper")
     for(let i = 0; i < usersArray.length; i++){
         wrapper.appendChild(createElement(usersArray[i], i))

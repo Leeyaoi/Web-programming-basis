@@ -307,6 +307,10 @@ function checkPagePathName(){
             currentObj = {"user_header":{
                 "ru": "Все пользователи ",
                 "en": "All users "
+            },
+            "empty":{
+                "ru": "Пользователей нет",
+                "en": "There are no users"
             }}
             break;
         case "/pages/cart.html":
@@ -322,6 +326,10 @@ function checkPagePathName(){
             "banner_p":{
                 "ru": "Everist доступен в алюминиевых тюбиках или баночках",
                 "en": "Everist is available in aluminum tubes or tins"
+            },
+            "empty":{
+                "ru": "Ваша корзина пуста",
+                "en": "Your cart is empty"
             },
             "cart_header":{
                 "ru": "Ваша корзина ",
@@ -615,6 +623,7 @@ function changeLang(langObj){
         const elements = document.querySelectorAll(`[data-lang=${key}]`)
         elements.forEach((element) => {
             if(element){
+                console.log(element.dataset.lang)
                 if(element.placeholder !== undefined){
                     element.placeholder = langObj[key][currentLang]
                 }

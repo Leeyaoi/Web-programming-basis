@@ -1,9 +1,10 @@
 if(cartArray.length == 0){
-    document.querySelector(".cart_header").textContent = "Your cart is empty" 
-    document.querySelector(".total_cost").textContent += "0.00" 
+    document.querySelector(".cart_header").innerHTML = "Your cart is empty" 
+    document.querySelector(".cart_header").dataset.lang = "empty"
+    document.querySelector(".total_cost").innerHTML += "0.00" 
 }
 else{
-    document.querySelector(".cart_header").textContent += "("+cartArray.length+")" 
+    document.querySelector(".cart_header").innerHTML += "("+cartArray.length+")" 
     const wrapper = document.querySelector(".wrapper")
     let price = 0.0
     for(let i = 0; i < cartArray.length; i++){
@@ -14,7 +15,7 @@ else{
             location.reload()
         })
     }
-    document.querySelector(".total_cost").textContent += price 
+    document.querySelector(".total_cost").innerHTML += price 
 }
 
 function createElement(product, i){
