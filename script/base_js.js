@@ -19,7 +19,7 @@ if(localStorage.getItem('themePreference') == 'dark'){
   console.log(localStorage.getItem("lang"))
   console.log(mode_changer_big)
   mode_changer_big.dataset.lang = "d_mode"
-  mode_changer_small.dataset.lang = "d_mode"
+  mode_changer_small.dataset.lang = "d_m_small"
 }
 
 
@@ -31,7 +31,7 @@ function ChangeMode(element){
   if(newTheme == 'dark'){
     document.getElementById("logo").src="../source/logo1.png"
     mode_changer_big.dataset.lang = "d_mode"
-    mode_changer_small.dataset.lang = "d_mode"
+    mode_changer_small.dataset.lang = "d_m_small"
     if(localStorage.getItem("lang") == "ru"){
       mode_changer_big.innerHTML = "СВЕТЛАЯ ТЕМА"
       mode_changer_small.innerHTML = "СВЕТЛАЯ"
@@ -44,7 +44,7 @@ function ChangeMode(element){
   else{
     document.getElementById("logo").src="../source/logo.png"
     mode_changer_big.dataset.lang = "mode"
-    mode_changer_small.dataset.lang = "mode"
+    mode_changer_small.dataset.lang = "m_small"
     if(localStorage.getItem("lang") == "ru"){
       mode_changer_big.innerHTML = "ТЕМНАЯ ТЕМА"
       mode_changer_small.innerHTML = "ТЕМНАЯ"

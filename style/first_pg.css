@@ -1,3 +1,11 @@
+img{
+    transition: 0.3s;
+}
+
+img:hover{
+    zoom: 1.1;
+}
+
 .big_section{
     width: 100%;
     height: 605px;
@@ -20,9 +28,35 @@
     margin-top: 74px;
 
     height: 43px;
-    width: 133px;
+    min-width: 133px;
+    width: fit-content;
+
+    padding-left: 5px;
+    padding-right: 5px;
 
     line-height: 2.65rem;
+}
+
+#shop_now:hover{
+    animation: color_change 3s linear infinite forwards;
+}
+
+@keyframes color_change {
+    from{
+        background-color: var(--brown);
+        color: var(--white);
+    }
+    25%{
+        background-color: var(--blue);
+    }
+    75%{
+        background-color: var(--white);
+        color: var(--brown);
+    }
+    to{
+        background-color: var(--brown);
+        color: var(--white);
+    }
 }
 
 .awards_slider{
@@ -69,6 +103,19 @@
     height: 333px;
     object-fit: cover;
     width: 100%;
+    animation: blur_img 3s ease-in-out infinite forwards;
+}
+
+@keyframes blur_img {
+    from{
+        filter: blur(0);
+    }
+    50%{
+        filter: blur(0.1rem);
+    }
+    to{
+        filter: blur(0);
+    }
 }
 
 #quick_view{
@@ -237,6 +284,19 @@
     padding-right: 5px;
 }
 
+#shop_hair_n_body:hover{
+    animation: rotation 1s infinite;
+}
+
+@keyframes rotation {
+    from{
+        rotate: 0;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
 #eco_bottle{
     margin: 0;
     display: inline-block;
@@ -255,6 +315,11 @@
     width: 338px;
     display: inline-block;
     margin-top: 58px;
+    transition: 0.3s;
+}
+
+.adv_block:hover{
+    transform: translateY(-20px);
 }
 
 .adv_block.first{
@@ -368,6 +433,11 @@
     height: 38px;
     min-width: 218px;
     width: fit-content;
+    transition: 0.3s;
+}
+
+.button.first:hover{
+    transform: scale(1.1);
 }
 
 .little_name.second{
@@ -400,6 +470,11 @@
     padding-top: 4px;
     height: 39px;
     min-width: 169px;
+    transition: 0.3s;
+}
+
+.button.second:hover{
+    transform: scale(1.1);
 }
 
 .little_name.third{
@@ -432,6 +507,11 @@
     padding-top: 4px;
     height: 38px;
     min-width: 151px;
+    transition: 0.3s;
+}
+
+.button.third:hover{
+    transform: scale(1.1);
 }
 
 .little_name.fourth{
@@ -464,6 +544,11 @@
     padding-top: 4px;
     height: 39px;
     min-width: 151px;
+    transition: 0.3s;
+}
+
+.button.fourth:hover{
+    transform: scale(1.1);
 }
 
 .hair_slider{
@@ -490,11 +575,16 @@
 
 .eco_info{
     text-align: center;
+    margin: auto;
     margin-top: 75px;
-    margin-left: 366px;
     padding-top: 40px;
     width: 468px;
     height: 501px;
+    transition: 1s;
+}
+
+.eco_info:hover{
+    width: 90%;
 }
 
 .big_take.eco{
@@ -505,11 +595,13 @@
 .p2.eco{
     width: 410px;
     margin-top: -25px;
+    transition: 1s;
 }
 
 .p2.eco2{
     width: 400px;
     margin-top: 25px;
+    transition: 1s;
 }
 
 .button.eco{
@@ -522,6 +614,11 @@
 
     min-width: 158.5px;
     height: 39px;
+}
+
+.eco_info:hover .p2.eco, .eco_info:hover .p2.eco2{
+    font-size: 2rem;
+    width: 90%;
 }
 
 .eco_pins_slider{
@@ -610,7 +707,7 @@
     }
 
     .photo.first, .photo.second, .photo.third, .photo.fourth{
-        height: 50%;
+        height: 45%;
         width: 100%;
         order: 1;
     }
@@ -621,7 +718,7 @@
     }
 
     .info.n_btn{
-        height: 50%;
+        height: 55%;
         width: 100%;
         order: 2;
     }
@@ -633,12 +730,12 @@
 
     .big_take.first, .big_take.second, .big_take.third, .big_take.fourth{
         font-size: 3rem;
+        margin: auto;
     }
 
     .p1.first, .p1.second, .p1.third, .p1.fourth {
-        width: 80%;
+        width: 90%;
         margin: auto;
-        margin-top: -37px;
     }
 
     .p2.first, .p2.second, .p2.third, .p2.fourth {
@@ -650,7 +747,6 @@
     .button.first, .button.second, .button.third, .button.fourth {
         height: auto;
         padding: 0;
-        width: 20%;
         margin: auto;
         margin-top: 15px;
     }
@@ -665,6 +761,11 @@
         text-align: center;
         margin: auto;
         margin-top: 70px;
+    }
+
+    .eco_info:hover .p2.eco, .eco_info:hover .p2.eco2{
+        font-size: 1.5rem;
+        width: 90%;
     }
 
     .eco_pins_slider .swiper{
@@ -742,7 +843,7 @@
     .big_take.first, .big_take.second, .big_take.third, .big_take.fourth{
         font-size: 2.5rem;
         line-height: normal;
-        margin-top: 10px;
+        margin:auto;
     }
 
     .p1.first, .p1.second, .p1.third, .p1.fourth {
@@ -750,16 +851,14 @@
     }
 
     .p2.first, .p2.second, .p2.third, .p2.fourth {
-        width: 99%;
+        width: 90%;
         font-size: 0.65rem;
         margin: auto;
-        margin-top: -25px;
     }
 
     .button.first, .button.second, .button.third, .button.fourth {
         height: auto;
         padding: 0;
-        width: 40%;
         margin: auto;
         margin-top: 10px;
     }
@@ -794,6 +893,15 @@
         text-align: center;
         margin: auto;
         margin-top: 70px;
+    }
+
+    .p2.eco2, .p2.eco{
+        font-size: 0.7rem;
+    }
+
+    .eco_info:hover .p2.eco, .eco_info:hover .p2.eco2{
+        font-size: 0.8rem;
+        width: 90%;
     }
 
     .little_name.eco{

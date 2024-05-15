@@ -6,6 +6,9 @@ const awards_swiper = new Swiper('.awards_slider .swiper', {
     pagination: {
       el: '.swiper-pagination',
     },
+    autoplay:{
+      delay: 1500
+    },
     breakpoints: {
       1200: {
         slidesPerView: 3
