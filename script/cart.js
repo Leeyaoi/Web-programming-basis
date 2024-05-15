@@ -29,16 +29,23 @@ function createElement(product, i){
     const name = document.createElement("p")
     name.innerHTML = product["name"]
     name.classList.add("prod_name")
+    name.dataset.lang = "b"+product["image"]
 
     const price = document.createElement("p")
     price.innerHTML = "$"+product["price"]
     price.classList.add("prod_price")
 
     const btn = document.createElement("div")
-    btn.innerHTML = "delete"
+    if(localStorage.getItem("lang") == "ru"){
+        btn.innerHTML = "Удалить"
+    }
+    else{
+        btn.innerHTML = "delete"
+    }
     btn.classList.add("button")
     btn.classList.add("del_btn")
     btn.classList.add("b"+i)
+    btn.dataset.lang = "del_btn"
 
     newDiv.appendChild(image)
     newDiv.appendChild(name)

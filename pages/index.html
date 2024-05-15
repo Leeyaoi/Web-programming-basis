@@ -19,18 +19,18 @@
             <a href="index.html" style="width: 80%; margin: auto;">
                 <img src="../source/logo.png" alt="everist" id="logo">
             </a>
-            <div class="button usual" id="dark_theme">Dark mode</div>
-            <div class="button usual" id="lang">Go RUS</div>
+            <div class="button usual" id="dark_theme" data-lang="mode">Dark mode</div>
+            <div class="button usual" id="lang" data-lang="lang">Go RUS</div>
             <div id="menu">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="shop.html" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop" data-lang="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="about.html" id="about">about</a>
+                        <a class="menu_el" href="about.html" id="about" data-lang="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="admin_panel.html" id="admin_panel">admin panel</a>
+                        <a class="menu_el" href="admin_panel.html" id="admin_panel" data-lang="admin">admin panel</a>
                     </li>
                 </ul>
             </div>
@@ -48,27 +48,27 @@
             <div id="menu_b">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="shop.html" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop" data-lang="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="about.html" id="about">about</a>
+                        <a class="menu_el" href="about.html" id="about" data-lang="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="admin_panel.html" id="admin_panel">admin panel</a>
+                        <a class="menu_el" href="admin_panel.html" id="admin_panel" data-lang="admin">admin panel</a>
                     </li>
                     <li>
-                        <div class="button for_mobile" id="dark_theme">Dark mode</div>
-                        <div class="button for_mobile" id="lang">Go RUS</div>
+                        <div class="button for_mobile" id="dark_theme" data-lang="mode">Dark mode</div>
+                        <div class="button for_mobile" id="lang" data-lang="lang">Go RUS</div>
                     </li>
                 </ul>
             </div>
         </header>
         <div class="big_section" id="white">
-            <div id="find_routine">
+            <div id="find_routine" data-lang="find_routine">
                 Find Your Shower<br> Routine <br>(& Receive a Free Gift!).
             </div>
             <a href="shop.html">
-                <div class="button" id="shop_now">shop now</div>
+                <div class="button" id="shop_now" data-lang="shop_now">shop now</div>
             </a>
         </div>
         <div class="awards_slider" id="beige">
@@ -77,37 +77,39 @@
                     <div class="swiper-slide">
                         <div class="award">
                             <img class="award_img" src="../source/awards/el1.png" alt="">
-                            <p class="award_p">2021 Award Winner:<br>Best Gym-Bag Shampoo</p>
+                            <p class="award_p" data-lang="award1">2021 Award Winner:<br>Best Gym-Bag Shampoo</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="award">
                             <img class="award_img" src="../source/awards/el2.png" alt="">
-                            <p class="award_p">World-Changing Idea 2022<br>"On the Rise"</p>
+                            <p class="award_p" data-lang="award2">World-Changing Idea 2022<br>"On the Rise"</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="award">
                             <img class="award_img" src="../source/awards/el3.png" alt="">
-                            <p class="award_p">"The Zero-Waste Brand Making Waterless Haircare a Thing."</p>
+                            <p class="award_p" data-lang="award3">"The Zero-Waste Brand Making Waterless Haircare a
+                                Thing."</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="award">
                             <img class="award_img" src="../source/awards/el4.png" alt="">
-                            <p class="award_p">2021 Award-Winner:<br>Best Conscious Haircare Buys</p>
+                            <p class="award_p" data-lang="award4">2021 Award-Winner:<br>Best Conscious Haircare Buys</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="award">
                             <img class="award_img" src="../source/awards/el5.png" alt="">
-                            <p class="award_p">2021 Award-Winner:<br>Best of Waterless</p>
+                            <p class="award_p" data-lang="award5">2021 Award-Winner:<br>Best of Waterless</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="award">
                             <img class="award_img" src="../source/awards/el6.png" alt="">
-                            <p class="award_p">"Everist has perfected no-water paste formulas for shampoo and
+                            <p class="award_p" data-lang="award6">"Everist has perfected no-water paste formulas for
+                                shampoo and
                                 conditioner."
                             </p>
                         </div>
@@ -124,51 +126,57 @@
         <div class="products" id="beige">
             <div id="product_block">
                 <img src="../source/product1.jpeg" alt="" class="prod_img">
-                <div class="button" id="quick_view">quick view</div>
-                <p class="prod_name">The Shampoo Concentrate</p>
-                <p class="review_num">85 Reviews</p>
+                <div class="button" id="quick_view" data-lang="quick_view">quick view</div>
+                <p class="prod_name" data-lang="prod1">The Shampoo Concentrate</p>
+                <p class="review_num" data-lang="review1">85 Reviews</p>
                 <p class="prod_cost">$24.00</p>
             </div>
             <div id="product_block">
                 <img src="../source/product2.png" alt="" class="prod_img">
-                <div class="button" id="quick_view">quick view</div>
-                <p class="prod_name">The Deep Conditioning Concentrate</p>
-                <p class="review_num">10 Reviews</p>
+                <div class="button" id="quick_view" data-lang="quick_view">quick view</div>
+                <p class="prod_name" data-lang="prod2">The Deep Conditioning Concentrate</p>
+                <p class="review_num" data-lang="review2">10 Reviews</p>
                 <p class="prod_cost">$24.00</p>
             </div>
             <div id="product_block">
                 <img src="../source/product3.jpeg" alt="" class="prod_img">
-                <div class="button" id="quick_view">quick view</div>
-                <p class="prod_name">Haircare Concentrates Starter Kit</p>
-                <p class="review_num">0 Reviews</p>
+                <div class="button" id="quick_view" data-lang="quick_view">quick view</div>
+                <p class="prod_name" data-lang="prod3">Haircare Concentrates Starter Kit</p>
+                <p class="review_num" data-lang="review3">0 Reviews</p>
                 <p class="prod_cost">$46.00 $48.00</p>
             </div>
         </div>
         <div class="single_review" id="beige">
-            <p class="big_text">"I wasn’t prepared for how much healthier my hair is. I get compliments all of the time
+            <p class="big_text" data-lang="single_review_bt">"I wasn’t prepared for how much healthier my hair is. I get
+                compliments all of the time
                 now."</p>
-            <p class="big_author">- Maria</p>
+            <p class="big_author" data-lang="single_review_ba">- Maria</p>
         </div>
         <div class="eco_bottle" id="white">
             <div class="info">
-                <p class="little_name eco_first">Those plastic bottles in your shower?</p>
-                <p class="big_take eco_first">We've got something better.</p>
-                <p class="p2 eco_first">Most shampoos, conditioners and body washes are more than 70% water.</p>
-                <p class="p2 eco_second">Introducing the first, patent-pending waterless concentrates for hair and body.
+                <p class="little_name eco_first" data-lang="eco_first_ln">Those plastic bottles in your shower?</p>
+                <p class="big_take eco_first" data-lang="eco_first_bt">We've got something better.</p>
+                <p class="p2 eco_first" data-lang="eco_first_p1">Most shampoos, conditioners and body washes are more
+                    than 70% water.</p>
+                <p class="p2 eco_second" data-lang="eco_first_p2">Introducing the first, patent-pending waterless
+                    concentrates for hair and body.
                     3x
                     concentrated pastes that are packed with good for hair and skin ingredients and activated by the
                     water in your shower. We fit a whole bottle into a 100ml, travel-friendly, aluminum tube.</p>
                 <p class="p2 pros_list">
-                    Water-activated pastes <img class="sep" src="../source/list_styler.png">
-                    Plant-based <img class="sep" src="../source/list_styler.png"> Single-use plastic free <img
-                        class="sep" src="../source/list_styler.png"> Vegan <img class="sep"
+                    <span data-lang="pro1">Water-activated pastes</span> <img class="sep"
                         src="../source/list_styler.png">
-                    Cruelty-free <img class="sep" src="../source/list_styler.png"> Sulfate-free <img class="sep"
-                        src="../source/list_styler.png"> Silicone-free <img class="sep" src="../source/list_styler.png">
-                    Paraben-free
+                    <span data-lang="pro2">Plant-based</span> <img class="sep" src="../source/list_styler.png">
+                    <span data-lang="pro3">Single-use plastic free</span> <img class="sep"
+                        src="../source/list_styler.png">
+                    <span data-lang="pro4">Vegan</span> <img class="sep" src="../source/list_styler.png">
+                    <span data-lang="pro5">Cruelty-free</span> <img class="sep" src="../source/list_styler.png">
+                    <span data-lang="pro6">Sulfate-free</span> <img class="sep" src="../source/list_styler.png">
+                    <span data-lang="pro7">Silicone-free</span> <img class="sep" src="../source/list_styler.png">
+                    <span data-lang="pro8">Paraben-free</span>
                 </p>
                 <a href="shop.html">
-                    <div class="button" id="shop_hair_n_body">Shop hair + body</div>
+                    <div class="button" id="shop_hair_n_body" data-lang="shop_hair_n_body">Shop hair + body</div>
                 </a>
             </div>
             <img src="../source/eco_bottle.png" alt="eco bottle" id="eco_bottle">
@@ -176,32 +184,37 @@
         <div class="advantages" id="beige">
             <div class="adv_block first">
                 <img src="../source/advantage1.png" class="adv_img">
-                <div class="button summary">High Performance</div>
-                <div class="text summary">There's a reason people say it's the best shampoo they've ever used.</div>
+                <div class="button summary" data-lang="adv1_btn">High Performance</div>
+                <div class="text summary" data-lang="adv1_txt">There's a reason people say it's the best shampoo they've
+                    ever used.</div>
             </div>
             <div class="adv_block second">
                 <img src="../source/advantage2.jpeg" class="adv_img">
-                <div class="button summary">Super Clean</div>
-                <div class="text summary">Ingredients matter. Here's what you will (and won't) find in Everist products.
+                <div class="button summary" data-lang="adv2_btn">Super Clean</div>
+                <div class="text summary" data-lang="adv2_txt">Ingredients matter. Here's what you will (and won't) find
+                    in Everist products.
                 </div>
             </div>
             <div class="adv_block third">
                 <img src="../source/advantage3.jpeg" class="adv_img">
-                <div class="button summary">Made for Eco-Optimists</div>
-                <div class="text summary">We make choices with the planet in mind. Here's how we've approached it.</div>
+                <div class="button summary" data-lang="adv3_btn">Made for Eco-Optimists</div>
+                <div class="text summary" data-lang="adv3_txt">We make choices with the planet in mind. Here's how we've
+                    approached it.</div>
             </div>
         </div>
         <div class="photos_n_buttons" id="white">
             <div class="photo_n_btn_block">
                 <div class="info n_btn first">
-                    <p class="little_name first">THE BIG IDEA</p>
-                    <p class="big_take first">Waterless</p>
-                    <p class="p1 first">We asked ourselves, why are we paying to ship heavy, plastic bottles of (mostly)
+                    <p class="little_name first" data-lang="ln1">THE BIG IDEA</p>
+                    <p class="big_take first" data-lang="bt1">Waterless</p>
+                    <p class="p1 first" data-lang="p11">We asked ourselves, why are we paying to ship heavy, plastic
+                        bottles of (mostly)
                         water around the world, when we are already showering in water?</p>
-                    <p class="p2 first">By removing added water from our formulas, we can create cutting edge formulas
+                    <p class="p2 first" data-lang="p21">By removing added water from our formulas, we can create cutting
+                        edge formulas
                         that are ultra clean, plant-based and leave your hair and skin happy and healthy.</p>
                     <a href="shop.html">
-                        <div class="button first">GO WATERLESS</div>
+                        <div class="button first" data-lang="btn1">GO WATERLESS</div>
                     </a>
                 </div>
                 <img src="../source/photo1.jpeg" alt="" class="photo first">
@@ -209,28 +222,32 @@
             <div class="photo_n_btn_block">
                 <img src="../source/photo2.png" alt="" class="photo second">
                 <div class="info n_btn second">
-                    <p class="little_name second">High Performance</p>
-                    <p class="big_take second">It works, we pinky promise.</p>
-                    <p class="p1 second">We know that if your personal care products don't make your hair and skin feel
+                    <p class="little_name second" data-lang="ln2">High Performance</p>
+                    <p class="big_take second" data-lang="bt2">It works, we pinky promise.</p>
+                    <p class="p1 second" data-lang="p12">We know that if your personal care products don't make your
+                        hair and skin feel
                         amazing, nothing else matters.</p>
-                    <p class="p2 second">We have high expectations of our hair and body care and our formulas won't
+                    <p class="p2 second" data-lang="p22">We have high expectations of our hair and body care and our
+                        formulas won't
                         disappoint. From a deep cleansing lather to our signature fresh scent, we've captured the
                         sensorial shower experience you love.</p>
                     <a href="shop.html">
-                        <div class="button second">GO WATERLESS</div>
+                        <div class="button second" data-lang="btn1">GO WATERLESS</div>
                     </a>
                 </div>
             </div>
             <div class="photo_n_btn_block">
                 <div class="info n_btn third">
-                    <p class="little_name third">Super Clean</p>
-                    <p class="big_take third">Always clean, as it should be.</p>
-                    <p class="p1 third">By removing the water from our formulas, Everist products can be formulated to a
+                    <p class="little_name third" data-lang="ln3">Super Clean</p>
+                    <p class="big_take third" data-lang="bt3">Always clean, as it should be.</p>
+                    <p class="p1 third" data-lang="p13">By removing the water from our formulas, Everist products can be
+                        formulated to a
                         new standard of clean.</p>
-                    <p class="p2 third">Everist products are plant-based, vegan and cruelty-free as well as being
+                    <p class="p2 third" data-lang="p23">Everist products are plant-based, vegan and cruelty-free as well
+                        as being
                         free-from sulfates, silicones, dyes and synthetic fragrances. No small feat.</p>
                     <a href="shop.html">
-                        <div class="button third">GO CLEAN</div>
+                        <div class="button third" data-lang="btn3">GO CLEAN</div>
                     </a>
                 </div>
                 <img src="../source/photo3.png" alt="" class="photo third">
@@ -238,16 +255,18 @@
             <div class="photo_n_btn_block">
                 <img src="../source/photo4.jpeg" alt="" class="photo fourth">
                 <div class="info n_btn fourth">
-                    <p class="little_name fourth">Made for Eco-Optimists</p>
-                    <p class="big_take fourth">It's the future of beauty.</p>
-                    <p class="p1 fourth">Our products are thoughtfully designed, inside and out, as is the way we do
+                    <p class="little_name fourth" data-lang="ln4">Made for Eco-Optimists</p>
+                    <p class="big_take fourth" data-lang="bt4">It's the future of beauty.</p>
+                    <p class="p1 fourth" data-lang="p14">Our products are thoughtfully designed, inside and out, as is
+                        the way we do
                         business.</p>
-                    <p class="p2 fourth">Everist products are single-use plastic free (our tubes are pure 100% recycled
+                    <p class="p2 fourth" data-lang="p24">Everist products are single-use plastic free (our tubes are
+                        pure 100% recycled
                         aluminum) and we take our caps back through our CapBack program. We also use biodegradable
                         ingredients for our formulas and produce with the smallest carbon footprint possible (which is
                         then offset, to be certified carbon neutral).</p>
                     <a href="shop.html">
-                        <div class="button fourth">GO ECO</div>
+                        <div class="button fourth" data-lang="btn4">GO ECO</div>
                     </a>
                 </div>
             </div>
@@ -286,15 +305,17 @@
         </div>
         <div class="eco_vision">
             <div class="eco_info" id="white">
-                <p class="little_name eco">Our VISION</p>
-                <p class="big_take eco">Eco for<br>Everyone</p>
-                <p class="p2 eco">We all want to live more sustainably. We're here to make it easier.</p>
-                <p class="p2 eco2">We believe that big change happens when small changes become easy and better (in
+                <p class="little_name eco" data-lang="eco_ln">Our VISION</p>
+                <p class="big_take eco" data-lang="eco_bt">Eco for<br>Everyone</p>
+                <p class="p2 eco" data-lang="eco_p1">We all want to live more sustainably. We're here to make it easier.
+                </p>
+                <p class="p2 eco2" data-lang="eco_p2">We believe that big change happens when small changes become easy
+                    and better (in
                     every
                     way) than the status quo. Eco can be for everyone and we're here to prove it. Imperfect
                     environmentalists welcome.</p>
                 <a href="shop.html">
-                    <div class="button eco">MEET EVERIST</div>
+                    <div class="button eco" data-lang="eco_btn">MEET EVERIST</div>
                 </a>
             </div>
         </div>
@@ -338,40 +359,40 @@
         <footer id="beige">
             <div class="links_block">
                 <div class="links list">
-                    Helpful Links
+                    <p data-lang="footer_links">Helpful Links</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>FAQ HELP CENTER</li>
-                        <li>CAP BACK</li>
-                        <li>SHIPPING POLICY</li>
-                        <li>RETURN POLICY</li>
-                        <li>PRIVACY POLICY</li>
-                        <li>TERMS</li>
-                        <li>SEARCH</li>
+                        <li data-lang="footer_links_help_center">FAQ HELP CENTER</li>
+                        <li data-lang="footer_links_cap">CAP BACK</li>
+                        <li data-lang="footer_links_shipping">SHIPPING POLICY</li>
+                        <li data-lang="footer_links_return">RETURN POLICY</li>
+                        <li data-lang="footer_links_privacy">PRIVACY POLICY</li>
+                        <li data-lang="footer_links_terms">TERMS</li>
+                        <li data-lang="footer_links_search">SEARCH</li>
                     </ul>
                 </div>
                 <div class="community list">
-                    Community
+                    <p data-lang="footer_community">Community</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>REVIEWS</li>
-                        <li>PRESS</li>
-                        <li>INSTAGRAM</li>
-                        <li>TIKTOK</li>
-                        <li>FACEBOOK</li>
-                        <li>BECOME A RETAIL PARTNER</li>
-                        <li>BECOME AN AFFILIATE</li>
-                        <li>BECOME AN AMBASSADOR</li>
+                        <li data-lang="footer_community_reviews">REVIEWS</li>
+                        <li data-lang="footer_community_press">PRESS</li>
+                        <li data-lang="footer_community_inst">INSTAGRAM</li>
+                        <li data-lang="footer_community_tt">TIKTOK</li>
+                        <li data-lang="footer_community_fb">FACEBOOK</li>
+                        <li data-lang="footer_community_partner">BECOME A RETAIL PARTNER</li>
+                        <li data-lang="footer_community_affilate">BECOME AN AFFILIATE</li>
+                        <li data-lang="footer_community_ambassador">BECOME AN AMBASSADOR</li>
                     </ul>
                 </div>
                 <div class="contacts list">
-                    Contact Us
+                    <p data-lang="footer_contacts">Contact Us</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
@@ -379,7 +400,7 @@
                     <ul>
                         <li> </li>
                         <li> </li>
-                        <li>Ask us anything.</li>
+                        <li data-lang="footer_ask">Ask us anything.</li>
                         <li> </li>
                         <li>darya.ya2608@gmail.com</li>
                         <li>+375(33)3371184</li>
@@ -387,16 +408,15 @@
                     </ul>
                 </div>
                 <div class="join list">
-                    Join our eco-optimist community.
+                    <p data-lang="footer_join">Join our eco-optimist community.</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>
+                        <li data-lang="footer_join_text">
                             You'll know about secret sales, new products before they launch, and occasionally we'll send
-                            you
-                            cat jokes.
+                            you cat jokes.
                         </li>
                     </ul>
                 </div>
@@ -410,6 +430,7 @@
     <script src="../script/data.js"></script>
     <script src="../script/load.js"></script>
     <script src="../script/base_js.js"></script>
+    <script src="../script/localization.js"></script>
 </body>
 
 </html>

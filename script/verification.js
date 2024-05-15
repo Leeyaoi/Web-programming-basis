@@ -83,6 +83,8 @@ function validPassword(pass){
 }
 
 function validation(form){
+    let ru_lan = localStorage.getItem("lang") == "ru"
+
     function removeError(input) {
         const parent = input.parentNode;
 
@@ -117,7 +119,12 @@ function validation(form){
             var pattern = /^(\+375|80)?\d{9}$/;
             if (!pattern.test(str)) {
                 removeError(input)
-                createError(input, `This is not a belarusian number`)
+                if(ru_lan){
+                    createError(input, `Это не беларусский номер телефона`)
+                }
+                else{
+                    createError(input, `This is not a belarusian number`)
+                }
                 result = false
             }
         }
@@ -127,7 +134,12 @@ function validation(form){
             var pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if (!pattern.test(str)) {
                 removeError(input)
-                createError(input, `This is not a valid email`)
+                if(ru_lan){
+                    createError(input, `Это не правильный адрес электронной почты`)
+                }
+                else{
+                    createError(input, `This is not a valid email`)
+                }
                 result = false
             }
         }
@@ -138,12 +150,22 @@ function validation(form){
             const differenceInDays = Math.abs(currentDate - birthday) / 1000;
             if (differenceInDays < 504921600 ) {
                 removeError(input)
-                createError(input, `You are younger than 16`)
+                if(ru_lan){
+                    createError(input, `Вы младше 16 лет`)
+                }
+                else{
+                    createError(input, `You are younger than 16`)
+                }
                 result = false
             }
             if (currentDate < birthday) {
                 removeError(input)
-                createError(input, `Wrong date`)
+                if(ru_lan){
+                    createError(input, `Неверная дата`)
+                }
+                else{
+                    createError(input, `Wrong date`)
+                }
                 result = false
             }
         }
@@ -152,12 +174,22 @@ function validation(form){
             var pass = document.getElementById("password").value;
             if (!(validPassword(pass))) {
                 removeError(input)
-                createError(input, `Password must be 8-20 chars long and contain at least 1 of each: big, small letters, number and special character`)
+                if(ru_lan){
+                    createError(input, `Пароль должен быть длиной 8-20 символов и обязательно включать в себя строчные и заглавные буквы латиницы, цифры и специальные символы`)
+                }
+                else{
+                    createError(input, `Password must be 8-20 chars long and contain at least 1 of each: big, small letters, number and special character`)
+                }
                 result = false
             }
             if (top100pass.includes(pass)) {
                 removeError(input)
-                createError(input, `This is one of the weakest passwords`)
+                if(ru_lan){
+                    createError(input, `Это один из 100 самых частоиспользуемых паролей 2023`)
+                }
+                else{
+                    createError(input, `This is one of the weakest passwords`)
+                }
                 result = false
             }
         }
@@ -168,7 +200,12 @@ function validation(form){
             console.log(pass)
             if (pass != cpass) {
                 removeError(input)
-                createError(input, `Passwords aren't matching`)
+                if(ru_lan){
+                    createError(input, `Пароли не совпадают`)
+                }
+                else{
+                    createError(input, `Passwords aren't matching`)
+                }
                 result = false
             }
         }
@@ -176,7 +213,12 @@ function validation(form){
         if (input.dataset.required == "true") {
             if (input.value == "") {
                 removeError(input)
-                createError(input, 'The field is required')
+                if(ru_lan){
+                    createError(input, `Это поле обязательно`)
+                }
+                else{
+                    createError(input, `The field is required`)
+                }
                 result = false
             }
         }

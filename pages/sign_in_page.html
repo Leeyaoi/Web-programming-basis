@@ -18,18 +18,18 @@
             <a href="index.html" style="width: 80%; margin: auto;">
                 <img src="../source/logo.png" alt="everist" id="logo">
             </a>
-            <div class="button usual" id="dark_theme">Dark mode</div>
-            <div class="button usual" id="lang">Go RUS</div>
+            <div class="button usual" id="dark_theme" data-lang="mode">Dark mode</div>
+            <div class="button usual" id="lang" data-lang="lang">Go RUS</div>
             <div id="menu">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="shop.html" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop" data-lang="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="about.html" id="about">about</a>
+                        <a class="menu_el" href="about.html" id="about" data-lang="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="admin_panel.html" id="admin_panel">admin panel</a>
+                        <a class="menu_el" href="admin_panel.html" id="admin_panel" data-lang="admin">admin panel</a>
                     </li>
                 </ul>
             </div>
@@ -47,17 +47,17 @@
             <div id="menu_b">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="shop.html" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop" data-lang="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="about.html" id="about">about</a>
+                        <a class="menu_el" href="about.html" id="about" data-lang="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="admin_panel.html" id="admin_panel">admin panel</a>
+                        <a class="menu_el" href="admin_panel.html" id="admin_panel" data-lang="admin">admin panel</a>
                     </li>
                     <li>
-                        <div class="button for_mobile" id="dark_theme">Dark mode</div>
-                        <div class="button for_mobile" id="lang">Go RUS</div>
+                        <div class="button for_mobile" id="dark_theme" data-lang="mode">Dark mode</div>
+                        <div class="button for_mobile" id="lang" data-lang="lang">Go RUS</div>
                     </li>
                 </ul>
             </div>
@@ -65,39 +65,42 @@
 
         <div class="sign_in" id="beige">
             <form id="form">
-                <label class="login_label">Create Account</label><br>
+                <label class="login_label" data-lang="create_acc">Create Account</label><br>
                 <div class="input-box">
-                    <input type="text" id="fname" name="fname" placeholder="First name" data-required="true"><br>
+                    <input type="text" id="fname" name="fname" data-lang="fname" placeholder="First name"
+                        data-required="true"><br>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="lname" name="lname" placeholder="Last name" data-required="true"><br>
+                    <input type="text" id="lname" name="lname" data-lang="lname" placeholder="Last name"
+                        data-required="true"><br>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="mname" name="mname" placeholder="Middle name"><br>
+                    <input type="text" id="mname" name="mname" data-lang="mname" placeholder="Middle name"><br>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="email" name="email" placeholder="Email" data-required="true"
-                        data-type="email"><br>
+                    <input type="text" id="email" name="email" data-lang="email" placeholder="Email"
+                        data-required="true" data-type="email"><br>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="phoneNum" name="phoneNum" placeholder="Phone number" data-required="true"
-                        data-type="phone">
+                    <input type="text" id="phoneNum" name="phoneNum" data-lang="phoneNum" placeholder="Phone number"
+                        data-required="true" data-type="phone">
                 </div>
                 <div class="input-box">
-                    <input type="date" id="birthDate" name="birthDate" data-required="true" data-type="date">
+                    <input type="date" id="birthDate" name="birthDate" data-lang="birthDate" data-required="true"
+                        data-type="date">
                 </div>
                 <div class="input-box">
-                    <input type="text" id="password" name="password" placeholder="Password" data-required="true"
-                        data-type="password"><br>
-                    <label for="generatePass" id="gener">Generate password</label>
+                    <input type="text" id="password" name="password" data-lang="password" placeholder="Password"
+                        data-required="true" data-type="password"><br>
+                    <label for="generatePass" id="gener" data-lang="gener">Generate password</label>
                 </div>
                 <input type="checkbox" name="generatePass" id="generatePass">
                 <div class="input-box">
-                    <input type="password" id="cPassword" name="cPassword" placeholder="Confirm password"
-                        data-type="cPassword" data-required="true">
+                    <input type="password" id="cPassword" name="cPassword" data-lang="cPassword"
+                        placeholder="Confirm password" data-type="cPassword" data-required="true">
                 </div><br><br>
-                <input type="submit" class="button" id="create" value="CREATE">
-                <a class="return_to_store" href="index.html">
+                <input type="submit" class="button" id="create" data-lang="create" value="CREATE">
+                <a class="return_to_store" href="index.html" data-lang="return_to_store">
                     Return to Store
                 </a>
             </form>
@@ -106,40 +109,40 @@
         <footer id="beige">
             <div class="links_block">
                 <div class="links list">
-                    Helpful Links
+                    <p data-lang="footer_links">Helpful Links</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>FAQ HELP CENTER</li>
-                        <li>CAP BACK</li>
-                        <li>SHIPPING POLICY</li>
-                        <li>RETURN POLICY</li>
-                        <li>PRIVACY POLICY</li>
-                        <li>TERMS</li>
-                        <li>SEARCH</li>
+                        <li data-lang="footer_links_help_center">FAQ HELP CENTER</li>
+                        <li data-lang="footer_links_cap">CAP BACK</li>
+                        <li data-lang="footer_links_shipping">SHIPPING POLICY</li>
+                        <li data-lang="footer_links_return">RETURN POLICY</li>
+                        <li data-lang="footer_links_privacy">PRIVACY POLICY</li>
+                        <li data-lang="footer_links_terms">TERMS</li>
+                        <li data-lang="footer_links_search">SEARCH</li>
                     </ul>
                 </div>
                 <div class="community list">
-                    Community
+                    <p data-lang="footer_community">Community</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>REVIEWS</li>
-                        <li>PRESS</li>
-                        <li>INSTAGRAM</li>
-                        <li>TIKTOK</li>
-                        <li>FACEBOOK</li>
-                        <li>BECOME A RETAIL PARTNER</li>
-                        <li>BECOME AN AFFILIATE</li>
-                        <li>BECOME AN AMBASSADOR</li>
+                        <li data-lang="footer_community_reviews">REVIEWS</li>
+                        <li data-lang="footer_community_press">PRESS</li>
+                        <li data-lang="footer_community_inst">INSTAGRAM</li>
+                        <li data-lang="footer_community_tt">TIKTOK</li>
+                        <li data-lang="footer_community_fb">FACEBOOK</li>
+                        <li data-lang="footer_community_partner">BECOME A RETAIL PARTNER</li>
+                        <li data-lang="footer_community_affilate">BECOME AN AFFILIATE</li>
+                        <li data-lang="footer_community_ambassador">BECOME AN AMBASSADOR</li>
                     </ul>
                 </div>
                 <div class="contacts list">
-                    Contact Us
+                    <p data-lang="footer_contacts">Contact Us</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
@@ -147,7 +150,7 @@
                     <ul>
                         <li> </li>
                         <li> </li>
-                        <li>Ask us anything.</li>
+                        <li data-lang="footer_ask">Ask us anything.</li>
                         <li> </li>
                         <li>darya.ya2608@gmail.com</li>
                         <li>+375(33)3371184</li>
@@ -155,16 +158,15 @@
                     </ul>
                 </div>
                 <div class="join list">
-                    Join our eco-optimist community.
+                    <p data-lang="footer_join">Join our eco-optimist community.</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>
+                        <li data-lang="footer_join_text">
                             You'll know about secret sales, new products before they launch, and occasionally we'll send
-                            you
-                            cat jokes.
+                            you cat jokes.
                         </li>
                     </ul>
                 </div>
@@ -177,6 +179,7 @@
     <script src="../script/user_work.js"></script>
     <script src="../script/verification.js"></script>
     <script src="../script/sign_in_validation.js"></script>
+    <script src="../script/localization.js"></script>
 </body>
 
 </html>

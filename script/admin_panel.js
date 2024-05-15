@@ -1,5 +1,10 @@
 if(localStorage.getItem("role") != "seller"){
-    alert("You can't see")
+    if(localStorage.getItem("lang") == "ru"){
+        alert("Нет доступа")
+    }
+    else{
+        alert("You can't see")
+    }
     window.location.replace("../pages/index.html")
 }
 

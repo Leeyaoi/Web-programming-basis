@@ -3,7 +3,18 @@ let user = getUser()
 console.log(localStorage.getItem("role"))
 console.log(localStorage.getItem("userId"))
 
-document.querySelector(".login_label").textContent += user["role"]
+if(localStorage.getItem("lang") == "ru"){
+    if(user["role"] == "seller")[
+        document.querySelector(".login_label").textContent += "продавец"
+    ]
+    else{
+        document.querySelector(".login_label").textContent += "покупатель"
+    }
+}
+else{
+    document.querySelector(".login_label").textContent += user["role"]
+}
+
 document.querySelector("#fname").textContent = user["firstName"]
 document.querySelector("#mname").textContent = user["middleName"]
 document.querySelector("#lname").textContent = user["lastName"]

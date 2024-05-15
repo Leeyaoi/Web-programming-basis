@@ -18,7 +18,12 @@ document.getElementById("form").addEventListener("submit", function(event){
             return
         }
         login(user)
-        alert("Success")
+        if(localStorage.getItem("lang") == "ru"){
+            alert("Успешно")
+        }
+        else{
+            alert("Success")
+        }
         window.location.replace("../pages/index.html");
     }
 });

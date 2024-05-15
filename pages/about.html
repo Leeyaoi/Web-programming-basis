@@ -18,18 +18,18 @@
             <a href="index.html" style="width: 80%; margin: auto;">
                 <img src="../source/logo.png" alt="everist" id="logo">
             </a>
-            <div class="button usual" id="dark_theme">Dark mode</div>
-            <div class="button usual" id="lang">Go RUS</div>
+            <div class="button usual" id="dark_theme" data-lang="mode">Dark mode</div>
+            <div class="button usual" id="lang" data-lang="lang">Go RUS</div>
             <div id="menu">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="shop.html" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop" data-lang="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="about.html" id="about">about</a>
+                        <a class="menu_el" href="about.html" id="about" data-lang="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="admin_panel.html" id="admin_panel">admin panel</a>
+                        <a class="menu_el" href="admin_panel.html" id="admin_panel" data-lang="admin">admin panel</a>
                     </li>
                 </ul>
             </div>
@@ -47,33 +47,34 @@
             <div id="menu_b">
                 <ul class="menu_list">
                     <li>
-                        <a class="menu_el" href="shop.html" id="shop">shop</a>
+                        <a class="menu_el" href="shop.html" id="shop" data-lang="shop">shop</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="about.html" id="about">about</a>
+                        <a class="menu_el" href="about.html" id="about" data-lang="about">about</a>
                     </li>
                     <li>
-                        <a class="menu_el" href="admin_panel.html" id="admin_panel">admin panel</a>
+                        <a class="menu_el" href="admin_panel.html" id="admin_panel" data-lang="admin">admin panel</a>
                     </li>
                     <li>
-                        <div class="button for_mobile" id="dark_theme">Dark mode</div>
-                        <div class="button for_mobile" id="lang">Go RUS</div>
+                        <div class="button for_mobile" id="dark_theme" data-lang="mode">Dark mode</div>
+                        <div class="button for_mobile" id="lang" data-lang="lang">Go RUS</div>
                     </li>
                 </ul>
             </div>
         </header>
 
         <div class="big_block">
-            <p class="little_name first">OUR STORY</p>
-            <p class="big_take first">Meet Everist</p>
+            <p class="little_name first" data-lang="bb1">OUR STORY</p>
+            <p class="big_take first" data-lang="bb2">Meet Everist</p>
         </div>
         <div class="the_question" id="white">
             <img src="../source/women.jpeg" alt="" class="question_img">
             <div class="question">
-                <p class="little_name second">OUR JOURNEY</p>
-                <p class="big_take second">The question:</p>
-                <p class="p1 second">What does the future of beauty looks like?</p>
-                <p class="p2 second">After working for decades at some of the world's biggest beauty companies, we knew
+                <p class="little_name second" data-lang="question_lil_name">OUR JOURNEY</p>
+                <p class="big_take second" data-lang="question_big_take">The question:</p>
+                <p class="p1 second" data-lang="question_p1">What does the future of beauty looks like?</p>
+                <p class="p2 second" data-lang="question_p2">After working for decades at some of the world's biggest
+                    beauty companies, we knew
                     there was a real need for innovation with our health and the health of our planet in mind.<br><br>
 
                     Everist started out as a low-waste brand, then a waterless brand. While we're still both of those
@@ -89,10 +90,11 @@
         </div>
         <div class="our_customer" id="white">
             <div class="customer">
-                <p class="little_name third">OUR CUSTOMER</p>
-                <p class="big_take third">We're here for the Everists.</p>
-                <p class="p1 third">The future thinkers.</p>
-                <p class="p2 third">The blue-sky, outside-of-the-box, 'what if?' kind of dreamers. <br><br>
+                <p class="little_name third" data-lang="customer_lil_name">OUR CUSTOMER</p>
+                <p class="big_take third" data-lang="customer_big_take">We're here for the Everists.</p>
+                <p class="p1 third" data-lang="customer_p1">The future thinkers.</p>
+                <p class="p2 third" data-lang="customer_p2">The blue-sky, outside-of-the-box, 'what if?' kind of
+                    dreamers. <br><br>
 
                     We believe that it's time to rethink everything and create the beauty company of the future.<br><br>
 
@@ -103,8 +105,10 @@
         </div>
         <div class="shop_link">
             <div class="block">
-                <p class="big_take in_block">Shop the future of beauty.</p>
-                <div class="button in_block">SHOP NOW</div>
+                <p class="big_take in_block" data-lang="link_block_big_take">Shop the future of beauty.</p>
+                <a href="shop.html">
+                    <div class="button in_block" data-lang="link_block_btn"> SHOP NOW</div>
+                </a>
             </div>
         </div>
         <div class="map" id="beige">
@@ -116,40 +120,40 @@
         <footer id="beige">
             <div class="links_block">
                 <div class="links list">
-                    Helpful Links
+                    <p data-lang="footer_links">Helpful Links</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>FAQ HELP CENTER</li>
-                        <li>CAP BACK</li>
-                        <li>SHIPPING POLICY</li>
-                        <li>RETURN POLICY</li>
-                        <li>PRIVACY POLICY</li>
-                        <li>TERMS</li>
-                        <li>SEARCH</li>
+                        <li data-lang="footer_links_help_center">FAQ HELP CENTER</li>
+                        <li data-lang="footer_links_cap">CAP BACK</li>
+                        <li data-lang="footer_links_shipping">SHIPPING POLICY</li>
+                        <li data-lang="footer_links_return">RETURN POLICY</li>
+                        <li data-lang="footer_links_privacy">PRIVACY POLICY</li>
+                        <li data-lang="footer_links_terms">TERMS</li>
+                        <li data-lang="footer_links_search">SEARCH</li>
                     </ul>
                 </div>
                 <div class="community list">
-                    Community
+                    <p data-lang="footer_community">Community</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>REVIEWS</li>
-                        <li>PRESS</li>
-                        <li>INSTAGRAM</li>
-                        <li>TIKTOK</li>
-                        <li>FACEBOOK</li>
-                        <li>BECOME A RETAIL PARTNER</li>
-                        <li>BECOME AN AFFILIATE</li>
-                        <li>BECOME AN AMBASSADOR</li>
+                        <li data-lang="footer_community_reviews">REVIEWS</li>
+                        <li data-lang="footer_community_press">PRESS</li>
+                        <li data-lang="footer_community_inst">INSTAGRAM</li>
+                        <li data-lang="footer_community_tt">TIKTOK</li>
+                        <li data-lang="footer_community_fb">FACEBOOK</li>
+                        <li data-lang="footer_community_partner">BECOME A RETAIL PARTNER</li>
+                        <li data-lang="footer_community_affilate">BECOME AN AFFILIATE</li>
+                        <li data-lang="footer_community_ambassador">BECOME AN AMBASSADOR</li>
                     </ul>
                 </div>
                 <div class="contacts list">
-                    Contact Us
+                    <p data-lang="footer_contacts">Contact Us</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
@@ -157,7 +161,7 @@
                     <ul>
                         <li> </li>
                         <li> </li>
-                        <li>Ask us anything.</li>
+                        <li data-lang="footer_ask">Ask us anything.</li>
                         <li> </li>
                         <li>darya.ya2608@gmail.com</li>
                         <li>+375(33)3371184</li>
@@ -165,16 +169,15 @@
                     </ul>
                 </div>
                 <div class="join list">
-                    Join our eco-optimist community.
+                    <p data-lang="footer_join">Join our eco-optimist community.</p>
                     <div class="for_mobile footer_arrow">
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <li>
+                        <li data-lang="footer_join_text">
                             You'll know about secret sales, new products before they launch, and occasionally we'll send
-                            you
-                            cat jokes.
+                            you cat jokes.
                         </li>
                     </ul>
                 </div>
@@ -184,6 +187,7 @@
     </div>
     <script src="../script/swiper-bundle.min.js"></script>
     <script src="../script/base_js.js"></script>
+    <script src="../script/localization.js"></script>
 </body>
 
 </html>

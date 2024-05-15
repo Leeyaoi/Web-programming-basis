@@ -1,0 +1,105 @@
+{"mode":{
+    "ru": "Темная тема",
+    "en": "Dark mode"
+},
+"lang":{
+    "ru":"Англ",
+    "en":"Go RUS"
+},
+"shop":{
+    "ru":"Каталог",
+    "en":"shop"
+},
+"about":{
+    "ru":"о нас",
+    "en":"about"
+},
+"admin":{
+    "ru":"Админ панель",
+    "en":"admin panel"
+},
+"footer_links":{
+    "ru":"Полезные ссылки",
+    "en":"Helpful Links"
+},
+"footer_links_help_center":{
+    "ru":"СПРАВОЧНАЯ СЛУЖБА",
+    "en":"FAQ HELP CENTER"
+},
+"footer_links_cap":{
+    "ru":"ВОЗВРАТ КОЛПАЧКОВ",
+    "en":"CAP BACK"
+},
+"footer_links_shipping":{
+    "ru":"ПРАВИЛА ДОСТАВКИ",
+    "en":"SHIPPING POLICY"
+},
+"footer_links_return":{
+    "ru":"ПРАВИЛА ВОЗВРАТА",
+    "en":"RETURN POLICY"
+},
+"footer_links_privacy":{
+    "ru":"ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ",
+    "en":"PRIVACY POLICY"
+},
+"footer_links_terms":{
+    "ru":"УСЛОВИЯ",
+    "en":"TERMS"
+},
+"footer_links_search":{
+    "ru":"ПОИСК",
+    "en":"SEARCH"
+},
+"footer_community":{
+    "ru":"Сообщество",
+    "en":"Community"
+},
+"footer_community_reviews":{
+    "ru":"ОТЗЫВЫ",
+    "en":"REVIEWS"
+},
+"footer_community_press":{
+    "ru":"ПРЕССА",
+    "en":"PRESS"
+},
+"footer_community_inst":{
+    "ru":"INSTAGRAM",
+    "en":"INSTAGRAM"
+},
+"footer_community_tt":{
+    "ru":"TIKTOK",
+    "en":"TIKTOK"
+},
+"footer_community_fb":{
+    "ru":"FACEBOOK",
+    "en":"FACEBOOK"
+},
+"footer_community_partner":{
+    "ru":"СТАТЬ РОЗНИЧНЫМ ПАРТНЕРОМ",
+    "en":"BECOME A RETAIL PARTNER"
+},
+"footer_community_affilate":{
+    "ru":"СТАТЬ ПАРТНЕРОМ",
+    "en":"BECOME AN AFFILIATE"
+},
+"footer_community_ambassador":{
+    "ru":"СТАТЬ АМБАССАДОРОМ",
+    "en":"BECOME AN AMBASSADOR"
+},
+"footer_contacts":{
+    "ru":"Сваяжитесь с нами",
+    "en":"Contact Us"
+},
+"footer_ask":{
+    "ru":"Спросите все что нужно",
+    "en":"Ask us anything."
+},
+"footer_join":{
+    "ru":"Присоединяйтесь к нашему эко-сообществу.",
+    "en":"Join our eco-optimist community."
+},
+"footer_join_text":{
+    "ru":"Вы будете знать о секретных продажах, новых продуктах до их запуска, и время от времени мы будем присылать вам смешные картинки с котами.",
+    "en":"You'll know about secret sales, new products before they launch, and occasionally we'll send you cat jokes."
+}
+}

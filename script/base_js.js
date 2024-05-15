@@ -7,16 +7,44 @@ const mode_changer_small = document.querySelector('.menu_list #dark_theme');
 mode_changer_big.addEventListener('click', () => ChangeMode(mode_changer_big));
 mode_changer_small.addEventListener('click', () => ChangeMode(mode_changer_small));
 
+if(localStorage.getItem('themePreference') == 'dark'){
+  document.body.classList.toggle('dark-theme');
+  document.documentElement.setAttribute('data-theme', 'dark');
+  if(localStorage.getItem("lang") == "ru"){
+    mode_changer_big.innerHTML = "СВЕТЛАЯ ТЕМА"
+    mode_changer_small.innerHTML = "СВЕТЛАЯ"
+  }
+  else{
+    mode_changer_big.innerHTML = "LIGHT MODE"
+    mode_changer_small.innerHTML = "LIGHT MODE"
+  }
+}
+
+
 document.querySelector(".cart").addEventListener("click", () => {window.location.replace("../pages/cart.html")})
 
 function ChangeMode(element){
   document.body.classList.toggle('dark-theme');
   const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
   if(newTheme == 'dark'){
-    element.innerHTML = "LIGHT MODE"
+    if(localStorage.getItem("lang") == "ru"){
+      mode_changer_big.innerHTML = "СВЕТЛАЯ ТЕМА"
+      mode_changer_small.innerHTML = "СВЕТЛАЯ"
+    }
+    else{
+      mode_changer_big.innerHTML = "LIGHT MODE"
+      mode_changer_small.innerHTML = "LIGHT MODE"
+    }
   }
   else{
-    element.innerHTML = "DARK MODE"
+    if(localStorage.getItem("lang") == "ru"){
+      mode_changer_big.innerHTML = "ТЕМНАЯ ТЕМА"
+      mode_changer_small.innerHTML = "ТЕМНАЯ"
+    }
+    else{
+      mode_changer_big.innerHTML = "DARK MODE"
+      mode_changer_small.innerHTML = "DARK MODE"
+    }
   }
   localStorage.setItem('themePreference', newTheme);
   document.documentElement.setAttribute('data-theme', newTheme);
