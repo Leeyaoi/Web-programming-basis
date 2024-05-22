@@ -1,8 +1,5 @@
 let user = getUser()
 
-console.log(localStorage.getItem("role"))
-console.log(localStorage.getItem("userId"))
-
 if(localStorage.getItem("lang") == "ru"){
     if(user["role"] == "seller")[
         document.querySelector(".login_label").textContent += "продавец"
