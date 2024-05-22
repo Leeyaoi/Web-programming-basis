@@ -646,7 +646,6 @@ lang_btn.forEach((btn) => {
             currentLang = "ru"
         }
         localStorage.setItem("lang", currentLang)
-        changeLang(base_lang)
-        changeLang(currentObj)
+        window.location.reload();
     })
 })
