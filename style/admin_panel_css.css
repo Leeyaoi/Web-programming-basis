@@ -26,8 +26,14 @@
 .user{
     display: grid;
     grid-template-rows: 70px;
-    grid-template-columns: 70px 70px 70px 150px 170px 100px 70px;
+    grid-template-columns: 70px 70px 70px 130px 180px 100px 70px;
     border-bottom: 2px solid var(--brown);
+}
+
+.user_email{
+    max-width: 165px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .user div{
@@ -36,6 +42,7 @@
     margin: auto;
     text-align: center;
     word-break: break-all;
+    border-right: 2px solid var(--brown);
 }
 
 @media screen and (max-width: 767px){
