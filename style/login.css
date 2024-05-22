@@ -7,7 +7,7 @@ body.overflow{
     width: 100%;
 }
 
-.modal_close_login, .modal_close_sign_in{
+.modal_close{
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     right: 30px;
@@ -20,11 +20,11 @@ body.overflow{
     right: 10px;
 }
 
-.modal_close_login:hover, .modal_close_sign_in:hover{
+.modal_close:hover{
     cursor: pointer;
 }
 
-.modal_close_login span, .modal_close_sign_in span{
+.modal_close span{
     position: absolute;
     top: 20px;
     left: 5px;
@@ -34,11 +34,11 @@ body.overflow{
     transition: transform .5s, opacity .5s;
 }
 
-.modal_close_sign_in span:nth-child(1), .modal_close_login span:nth-child(1){
+.modal_close span:nth-child(1){
     transform: translateY(0) rotate(45deg);
 }
 
-.modal_close_sign_in span:nth-child(2), .modal_close_login span:nth-child(2){
+.modal_close span:nth-child(2){
     transform: translateY(0) rotate(-45deg);
 }
 
@@ -64,7 +64,7 @@ body.overflow{
     width: 100%;
 }
 
-.login_modal, .sign_in_modal{
+.modal{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
     position: fixed;
@@ -77,11 +77,11 @@ body.overflow{
     visibility: hidden;
 }
 
-.login_modal.open, .sign_in_modal.open{
+.modal.open{
     visibility: visible;
 }
 
-.login_modal_box, .sign_in_modal_box{
+.modal_box{
     position: relative;
     width: fit-content;
     padding: 50px;
@@ -98,7 +98,6 @@ form, .create_acc, .return_to_store{
 
 form{
     height: fit-content;
-
 }
 
 .login_label{

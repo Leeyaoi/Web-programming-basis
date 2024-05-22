@@ -545,8 +545,15 @@ function checkPagePathName(){
             break;
         case "/pages/profile.html":
         case "/pages/log_in_page.html":
-        case "/pages/sign_in_page.html":
-            currentObj = {"login_label1":{
+            currentObj = {"success":{
+                "ru": "Успешно",
+                "en": "Success"
+            },
+            "not_success":{
+                "ru": "Неверный логин или пароль",
+                "en": "Invalid login/password"
+            },
+            "login_label1":{
                 "ru": "Войдите в свой аккаунт",
                 "en": "Log into your account"
             },
