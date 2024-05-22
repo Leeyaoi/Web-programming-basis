@@ -274,7 +274,8 @@ header.open #burger-menu span:nth-child(3){
 
 footer{
     width: 1200px;
-    height: 415px;
+    height: fit-content;
+    padding-bottom: 5px;
 }
 
 .links_block{

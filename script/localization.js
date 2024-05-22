@@ -8,7 +8,6 @@ let currentLang = localStorage.getItem("lang") || "en"
 let lang_btn = document.querySelectorAll("[data-lang=lang]")
 let currentPath = window.location.pathname
 
-console.log(currentPath)
 function checkPagePathName(){
     switch(currentPath){
         case "/pages/index.html":
@@ -546,8 +545,27 @@ function checkPagePathName(){
             break;
         case "/pages/profile.html":
         case "/pages/log_in_page.html":
-        case "/pages/sign_in_page.html":
-            currentObj = {"role":{
+            currentObj = {"success":{
+                "ru": "Успешно",
+                "en": "Success"
+            },
+            "not_success":{
+                "ru": "Неверный логин или пароль",
+                "en": "Invalid login/password"
+            },
+            "login_label1":{
+                "ru": "Войдите в свой аккаунт",
+                "en": "Log into your account"
+            },
+            "login_btn":{
+                "ru": "Войти",
+                "en": "Log in"
+            },
+            "sign_in_btn":{
+                "ru": "Создать аккаунт",
+                "en": "Sign in"
+            },
+            "role":{
                 "ru": "Ваша роль - ",
                 "en": "Your role is "
             },
