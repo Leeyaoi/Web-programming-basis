@@ -303,7 +303,11 @@ function checkPagePathName(){
             }}
             break;
         case "/pages/admin_panel.html":
-            currentObj = {"user_header":{
+            currentObj = {"clear":{
+                "ru": "Сброс",
+                "en": "Reset"
+            },
+            "user_header":{
                 "ru": "Все пользователи ",
                 "en": "All users "
             },

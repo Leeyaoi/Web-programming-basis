@@ -3,7 +3,7 @@
     min-height: 250px;
 }
 
-.user_content{
+.user_content, .clear{
     width: 700px;
     margin: auto;
     margin-top: 50px;
@@ -46,7 +46,7 @@
 }
 
 @media screen and (max-width: 767px){
-    .user_content{
+    .user_content, .clear{
         width: 300px;
     }
 

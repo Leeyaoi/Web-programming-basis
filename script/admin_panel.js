@@ -63,3 +63,8 @@ function createElement(user, i){
 
     return newDiv
 }
+
+document.querySelector(".clear").addEventListener("click", () => {
+    localStorage.clear();
+    window.location.replace("../pages/index.html")
+})
