@@ -1,5 +1,7 @@
 html[data-theme='dark'] .banner{
     background-image: url("../source/cremes.jpg");
+    background-size: cover;
+    background-position-y: -110px;
 }
 
 .banner{
@@ -95,7 +97,14 @@ html[data-theme='dark'] .banner{
     padding-top: 3px;
 }
 
-@media screen and (max-width: 1200px) {  
+@media screen and (max-width: 1200px) { 
+    html[data-theme='dark'] .banner{
+        background-image: url("../source/cremes.jpg");
+        background-size: 800px;
+        background-position-y: -2px;
+        background-position-x: 7px;
+    }
+
     .products{
         width: 768px;
         height: 1700px;
