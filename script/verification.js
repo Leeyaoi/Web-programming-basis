@@ -302,7 +302,7 @@ function validation(form) {
     }
 
     if (input.dataset.type == "cPassword") {
-      var pass = document.getElementById("password").value;
+      var pass = document.getElementById("passwordS").value;
       var cpass = document.getElementById("cPassword").value;
       console.log(pass);
       if (pass != cpass) {
