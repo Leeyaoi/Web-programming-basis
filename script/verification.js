@@ -271,7 +271,7 @@ function validation(form) {
     }
 
     if (input.dataset.type == "password") {
-      var pass = document.getElementById("password").value;
+      var pass = document.getElementById("passwordS").value;
       if (!validPassword(pass)) {
         removeError(input);
         if (ru_lan) {
