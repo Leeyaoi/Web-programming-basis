@@ -270,6 +270,37 @@ function validation(form) {
       }
     }
 
+    if (input.dataset.type == "passwordL") {
+      var pass = document.getElementById("password").value;
+      if (!validPassword(pass)) {
+        removeError(input);
+        if (ru_lan) {
+          createError(
+            input,
+            `Пароль должен быть длиной 8-20 символов и обязательно включать в себя строчные и заглавные буквы латиницы, цифры и специальные символы`
+          );
+        } else {
+          createError(
+            input,
+            `Password must be 8-20 chars long and contain at least 1 of each: big, small letters, number and special character`
+          );
+        }
+        result = false;
+      }
+      if (top100pass.includes(pass)) {
+        removeError(input);
+        if (ru_lan) {
+          createError(
+            input,
+            `Это один из 100 самых частоиспользуемых паролей 2023`
+          );
+        } else {
+          createError(input, `This is one of the weakest passwords`);
+        }
+        result = false;
+      }
+    }
+
     if (input.dataset.type == "password") {
       var pass = document.getElementById("passwordS").value;
       if (!validPassword(pass)) {
